@@ -1,0 +1,18 @@
+%dote_base
+    width: 20px
+    height: 20px
+    margin-left: 9px
+    margin-right: 9px
+    border-radius: 100%
+    cursor: pointer
+
+.dotes
+    display: flex
+    justify-content: center
+    align-items: center
+    &-dote
+        @extend %dote_base
+        background-color: $grey-color
+    &-dote.active
+            @extend %dote_base
+            background-color: $yellow-color

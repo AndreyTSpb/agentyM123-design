@@ -1,0 +1,118 @@
+.header
+    max-width: 1920px
+    min-height: 225px
+    background-image: url('../img/bg/bg_header_menu.png')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    //background-position: left bottom
+    z-index: 9999
+    margin: 0 auto
+
+    &_top_menu
+        display: flex
+        align-items: center
+    &_logo
+        display: inline-block
+        margin-left: 0px
+
+    &_nav
+        display: inline-block
+        margin: 0 auto    
+        width: 800px
+
+        ul 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 0
+            padding: 0
+            li 
+                list-style-type: none /* Убираем маркеры */
+                display: inline
+                a 
+                    font-family: "CCTimSaleLower"
+                    font-size: 18px
+                    color: #fff
+                    text-transform: uppercase
+                    text-decoration: none  
+
+    &_dote
+        width: 7px
+        height: 7px
+        border-radius: 100%
+        background-color: $yellow-color
+    
+    &_social_buttons
+        display: inline-block
+        &_instagram
+            @extend %instagram
+        &_vk
+            margin-left: 17px
+            @extend %vk
+    
+    &_login_menu_wrapper
+        padding-top: 18px
+        display: flex
+        justify-content: center
+        align-items: center
+    
+    &_login_menu
+        text-align: left
+        display: flex
+        align-items: center
+        vertical-align: top
+        min-width: 200px
+        height: 90px
+        
+        background-color: $grey-color
+        text-shadow: 1px 1px 1px rgba(0,0,0,.45)
+        border: 1px solid $grey-color
+        background: -webkit-gradient(linear, left top, left bottom, from(#eee), to($grey-color))
+        background: -moz-linear-gradient(top,  #eee,  $grey-color)
+        box-shadow: inset 0 4px 5px 4px #f5f5f5 //тень внутри обьекта inset <сдвиг по x> <сдвиг по y> <радиус размытия> <растяжение> <цвет>
+        border-radius: 45px
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 15px
+        padding-bottom: 15px
+        
+        a 
+            margin-left: 5px
+            color: #000
+            font-size: 12px
+            font-weight: 400
+            line-height: 9px
+            text-decoration: underline
+
+        input[type='phone'], 
+        input[type='password']
+            width: 130px
+            height: 22px
+            box-shadow: inset 1px 1px 2px 1px rgba(37, 34, 30, 0.49)
+            border: none
+            border-radius: 11px
+            text-align: center
+            font-size: 17px
+            font-weight: 400
+        label
+            margin: 0;
+            margin-left: 5px
+            color: #71196f
+            font-size: 11px
+            font-weight: 400
+            line-height: 12.68px
+            text-decoration: underline
+        button
+            width: 43px
+            height: 43px
+            border-radius: 100%
+            border: none
+            background-color: $dark-purple-color
+            margin: 0
+            padding: 0
+            background: transparent url('../img/icons/btn-login.png') no-repeat center top
+            text-indent: -1000em
+            cursor: pointer
+            cursor: hand
+            

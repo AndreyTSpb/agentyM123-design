@@ -1,0 +1,42 @@
+.news
+    @extend %base-block-padding
+    @extend %grey_bg_fon
+    &-slider
+        position: relative
+        height: 250px
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 45px
+        &-item
+            padding-top: 15px
+            padding-bottom: 15px
+            width: 100%
+            img
+                margin: 5px 10px
+                @extend %shadow
+            h5 
+                margin-top: 15px
+                color: $purple-color
+                font-size: 22px
+            p 
+                font-size: 18px
+
+    &-subnews
+        margin-top: 15px
+        height: 160px
+        &-item
+            img 
+                width: 130px
+                height: 130px
+                border-radius: 100%
+                border: 5px solid $yellow-color
+            h5 
+                margin-top: 5px
+                color: $purple-color
+                font-size: 18px
+                letter-spacing: 0.6px
+                line-height: 18px
+            p 
+                font-size: 12px

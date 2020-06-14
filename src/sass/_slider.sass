@@ -1,0 +1,217 @@
+.slider
+    max-width: 1920px
+    min-height: 500px
+    background-image: url("../img/bg/bg_slider.png");
+    background-repeat: no-repeat
+    margin: 0 auto
+    h2 
+            font-family: 'Galpon-Black', sans-serif
+            color: $light-purple-color 
+            text-align: center
+            font-size: 68px
+            font-weight: 400
+            line-height: 66.97px
+            margin-top: 12px
+
+    &-wrapper
+            position: relative
+            width: 100%
+
+    &-magazin
+        &-read
+            margin: 0 auto
+            margin-top: 20px
+            width: 405px
+            height: 202px
+            background-image: url("../img/agents_label.png")
+            background-repeat: no-repeat
+            position: relative
+            button
+                position: absolute
+                left: 2px
+                bottom: 13px
+        &-ars
+            position: absolute
+            left: -110px
+            top: -80px
+            width: 238px
+            height: 407px
+            background-image: url("../img/bg/ars.png")
+            background-repeat: no-repeat
+        &-buk
+            position: absolute
+            left: 100px
+            top: 40px
+            width: 176px
+            height: 283px
+            background-image: url("../img/bg/buk.png")
+            background-repeat: no-repeat
+        &-devka
+            position: absolute
+            right: 190px
+            top: -20px
+            width: 177px
+            height: 299px
+            background-image: url("../img/bg/devka.png")
+            background-repeat: no-repeat
+        &-oret
+            position: absolute
+            right: -100px
+            top: -52px
+            width: 290px
+            height: 400px
+            background-image: url("../img/bg/oret.png")
+            background-repeat: no-repeat
+
+
+    &-online
+        &-run
+            margin: 0 auto
+            width: 470px
+            height: 65px
+            text-align: center
+            margin-top: 40px
+            z-index: 3
+            p 
+                font-size: 40px
+                font-weight: 400
+                line-height: 36px
+                color: $dark-purple-color
+        &-airplan-1
+            position: absolute
+            width: 667px
+            height: 412px
+            top: -45px
+            left: -140px
+            background-image: url("../img/bg/airplan_1.png");
+            background-repeat: no-repeat
+            background-size: 100%
+            //background-position: 30% 40%
+            z-index: -1
+        &-airplan-2
+            position: absolute
+            width: 465px
+            height: 272px
+            top: 60px
+            right: 0px
+            background-image: url("../img/bg/airplan_2.png");
+            background-repeat: no-repeat
+            background-size: 100%
+            //background-position: 30% 40%
+            z-index: -1
+        &-airplan-3
+            position: absolute
+            width: 250px
+            height: 170px
+            top: -30px
+            right: 0px
+            background-image: url("../img/bg/airplan_3.png");
+            background-repeat: no-repeat
+            background-size: 100%
+            //background-position: 30% 40%
+            z-index: -1
+
+    &-quests
+        &-btn-pump
+            display: block
+            margin: 0 auto
+            margin-top: 57px
+            width: 147px
+            height: 147px
+            border-radius: 100%
+            text-align: center
+            background-color: #71196f
+            border: 6px solid #71196f
+        &-ochkarik
+            width: 470px
+            height: 340px
+            z-index: 1
+            position: absolute
+            background-image: url("../img/bg/ochkarik_talk.png");
+            background-repeat: no-repeat
+            background-size: 100%
+
+        &-ded_buh
+            width: 500px
+            height: 300px
+            z-index: 1
+            position: absolute
+            top: 10px
+            right: 0
+            background-image: url("../img/bg/ded_buh.png");
+            background-repeat: no-repeat
+            background-size: 100%
+
+    &-franshiza
+        &-read
+            width: 885px
+            height: 150px
+            margin: 0 auto
+            margin-top: 6px
+            h4 
+                text-align: center
+                color: $dark-purple-color
+                font-size: 46px
+                font-weight: bold
+                line-height: 76.77px
+                letter-spacing: 0.44px
+            span 
+                color: $light-purple-color
+                font-family: 'Galpon-Black', sans-serif
+                font-size: 41px
+                font-weight: 400
+                line-height: 33.22px
+                letter-spacing: 0.25px
+            p 
+                color: $dark-purple-color
+                font-size: 44px
+                font-weight: 400
+                line-height: 37.75px
+                letter-spacing: -0.13px
+            &-agenty
+                width: 296px
+                height: 155px
+                position: absolute
+                top: 25px
+                right: 130px
+                background-image: url("../img/agents_label.png");
+                background-repeat: no-repeat
+                background-size: 100%
+            a 
+               position: absolute
+               right: 30%
+               top: 110% 
+        &-devka
+            width: 275px
+            height: 365px
+            position: absolute
+            top: -60px
+            left: 0px
+            background-image: url("../img/bg/devka_talk.png");
+            background-repeat: no-repeat
+            background-size: 100%
+        &-buh
+            width: 261px
+            height: 112px
+            position: absolute
+            top: 180px
+            left: 180px
+            background-image: url("../img/bg/buh_2.png");
+            background-repeat: no-repeat
+            background-size: 100%
+        &-ars
+            width: 122px
+            height: 356px
+            position: absolute
+            top: -50px
+            right: 0px
+            background-image: url("../img/bg/ars_udiv.png");
+            background-repeat: no-repeat
+            background-size: 100%
+
+.slider-item
+        display: none;
+
+
+.show
+    display: block
