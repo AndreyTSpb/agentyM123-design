@@ -16,22 +16,39 @@
 
     &-slider
         display: flex
-        justify-content: space-around
+        justify-content: center
+        .slick-prev,.slick-next
+            border: none
+            background-color: #fff
+            img
+                width: 24px
+                height: 33px
         .item
             width: 250px
-            span 
-                display: inline-block
-                font-size: 20px
-                min-height: 30px
-                border-radius: 15px
-                padding: 0 10px
-                min-width: 100px
-                text-align: center
-                text-transform: uppercase
-            img
-                margin-top: 15px
-                width: 235px
-                height: 176px
-                @extend %shadow
-                &:hover
-                    @extend %move-for-hover-cursor
+            height: 250px
+            position: relative
+            &-wrapper
+                position: absolute
+                left: 50%
+                top: 50%
+                -webkit-transform: translate(-50%, -50%)
+                -moz-transform: translate(-50%, -50%)
+                -ms-transform: translate(-50%, -50%)
+                -o-transform: translate(-50%, -50%)
+                transform: translate(-50%, -50%)
+                span 
+                    display: inline-block
+                    font-size: 20px
+                    min-height: 30px
+                    border-radius: 15px
+                    padding: 0 10px
+                    min-width: 100px
+                    text-align: center
+                    text-transform: uppercase
+                    margin-bottom: 15px
+                img
+                    width: 235px
+                    height: 176px
+                    @extend %shadow
+                    &:hover
+                        @extend %move-for-hover-cursor

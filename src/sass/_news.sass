@@ -1,6 +1,8 @@
 .news
     @extend %base-block-padding
     @extend %grey_bg_fon
+    @extend %img-side-block
+
     &-slider
         position: relative
         height: 250px
@@ -24,10 +26,26 @@
                 font-size: 18px
 
     &-subnews
+        position: relative
         margin-top: 15px
-        height: 160px
+        //height: 160px
+        display: flex
+        justify-content: center
+        .slick-prev,.slick-next
+            border: none
+            background-color: #fff
+            img
+                width: 24px
+                height: 33px
+        .slick-prev
+            margin-right: 5px
+        .slick-next
+            margin-left: 5px
         &-item
+            position: relative
+            width: 300px
             border-right: 2px solid $grey-color
+            margin-left: 5px
             &-img 
                 width: 130px
                 height: 130px
