@@ -16,3 +16,28 @@
     &-dote.active
             @extend %dote_base
             background-color: $yellow-color
+
+.slick-dots
+    position: absolute
+    bottom: -45px
+    display: block
+    width: 100%
+    padding: 0
+    list-style: none
+    text-align: center
+    li 
+        list-style-type: none /* Убираем маркеры */
+        position: relative
+        display: inline-block
+        button
+            @extend %dote_base
+            background-color: $grey-color
+            text-indent: 100%
+            white-space: nowrap
+            overflow: hidden 
+            border: 0
+            outline: none
+    li.slick-active
+        button
+            @extend %dote_base
+            background-color: $yellow-color

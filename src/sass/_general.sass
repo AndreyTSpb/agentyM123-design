@@ -35,10 +35,14 @@ body
     font-family: "Galpon-Black"
     font-size: 68px
     font-weight: 400
-    line-height: 71.69px
+    line-height: 68px
     text-transform: uppercase
     color: $green-color
     @extend %text-shadow
+    @media only screen and (max-width: 400px) 
+        font-size: 40px
+        font-weight: 400
+        line-height: 30px
 
 .text-block
     font-size: 27px
