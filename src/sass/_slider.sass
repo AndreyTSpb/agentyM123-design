@@ -1,6 +1,6 @@
 .slider
     max-width: 1920px
-    min-height: 500px
+    height: 500px
     background-image: url("../img/bg/bg_slider.png");
     background-repeat: no-repeat
     margin: 0 auto
@@ -33,15 +33,17 @@
                 bottom: 13px
         &-ars
             position: absolute
-            left: -110px
-            top: -80px
+            left: 0
+            top: 0
+            transform: translateY( -50px)
             width: 238px
-            height: 407px
+            height: 3780px
             background-image: url("../img/bg/ars.png")
             background-repeat: no-repeat
+            background-size: contain
         &-buk
             position: absolute
-            left: 100px
+            left: 150px
             top: 40px
             width: 176px
             height: 283px
@@ -49,7 +51,7 @@
             background-repeat: no-repeat
         &-devka
             position: absolute
-            right: 190px
+            right: 200px
             top: -20px
             width: 177px
             height: 299px
@@ -57,12 +59,13 @@
             background-repeat: no-repeat
         &-oret
             position: absolute
-            right: -60px
-            top: -52px
-            width: 290px
-            height: 400px
+            right: 0
+            top: 0
+            width: 250px
+            height: 348px
             background-image: url("../img/bg/oret.png")
             background-repeat: no-repeat
+            background-size: cover
 
 
     &-online
@@ -127,21 +130,23 @@
             width: 470px
             height: 340px
             z-index: 1
+            top: 0
+            left: 0
             position: absolute
             background-image: url("../img/bg/ochkarik_talk.png");
             background-repeat: no-repeat
             background-size: 100%
 
         &-ded_buh
-            width: 500px
-            height: 300px
+            width: 470px
+            height: 310px
             z-index: 1
             position: absolute
-            top: 10px
+            top: 0
             right: 0
             background-image: url("../img/bg/ded_buh.png");
             background-repeat: no-repeat
-            background-size: 100%
+            background-size: contain
 
     &-franshiza
         &-read
@@ -177,7 +182,13 @@
                 right: 130px
                 background-image: url("../img/agents_label.png");
                 background-repeat: no-repeat
-                background-size: 100%
+                background-size: contain
+                @media only screen and (max-width: 1024px) 
+                    width: 296px
+                    height: 155px
+                    position: absolute
+                    top: 25px
+                    right: 30px
             a 
                position: absolute
                right: 30%
@@ -186,11 +197,12 @@
             width: 275px
             height: 365px
             position: absolute
-            top: -60px
-            left: 0px
+            top: 0
+            left: 0
+            transform: translateY(-60px)
             background-image: url("../img/bg/devka_talk.png");
             background-repeat: no-repeat
-            background-size: 100%
+            background-size: contain
         &-buh
             width: 261px
             height: 112px
@@ -200,6 +212,12 @@
             background-image: url("../img/bg/buh_2.png");
             background-repeat: no-repeat
             background-size: 100%
+            @media only screen and (max-width: 1024px) 
+                width: 261px
+                height: 112px
+                position: absolute
+                top: 180px
+                left: 100px
         &-ars
             width: 122px
             height: 356px
