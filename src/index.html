@@ -236,7 +236,7 @@
                             <button data-toggle="modal" data-target="#exampleModal" class="btn-agent btn-green pt-2 pb-2">Ольга <br>
                                 ТРОШИНА</button>
                             <div class="teachers-photo">
-                                <img src="img/teachers/ftroshina.png" alt="" srcset="">
+                                <img src="img/teachers/troshina.png" alt="" srcset="">
                             </div>
                         </div>
                         <div class="col-12 col-md-6 d-flex justify-content-around align-items-center mb-5">
@@ -664,11 +664,12 @@
     <!-- Slide-menu-->
     <section class="slide-menu">
         <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="На Главную"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="На Верх"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Сообщения"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Группы"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Данные"><i class="fa fa-id-card" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Выход"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
         </ul>
     </section>
 
@@ -677,6 +678,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+    <script>
+        //инициализация подсказок средствами bootstrap
+            $('[data-toggle="tooltip"]').tooltip();
+    </script>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
