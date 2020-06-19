@@ -5,22 +5,25 @@
 
     &-slider
         position: relative
-        height: 250px
+        min-height: 250px
         width: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        margin-top: 45px
-        .slick-prev,.slick-next
+        margin-top: 10px
+
+        .slick-prev, .slick-next
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -25px
             border: none
-            background-color: #fff
+            background-color: #ffffff
             img
-                width: 24px
-                height: 33px
-        .slick-prev
-            margin-right: 5px
+                width: 30px
+                height: 50px
+            
         .slick-next
-            margin-left: 5px
+            right: -25px
+            left: auto
+
         &-item
             padding-top: 15px
             padding-bottom: 15px
@@ -38,25 +41,27 @@
     &-subnews
         position: relative
         margin-top: 15px
-        //height: 160px
-        display: flex
-        justify-content: center
-        .slick-prev,.slick-next
+
+        .slick-prev, .slick-next
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -25px
             border: none
-            background-color: #fff
+            background-color: #ffffff
             img
-                width: 24px
-                height: 33px
-        .slick-prev
-            margin-right: 5px
+                width: 30px
+                height: 50px
+            
         .slick-next
-            margin-left: 5px
+            right: -25px
+            left: auto
+        
         &-item
             position: relative
             width: 330px
             border-right: 2px solid $grey-color
-            margin-left: 15px
-            margin-right: 15px
+            margin: 15px
             &-img 
                 width: 130px
                 height: 130px

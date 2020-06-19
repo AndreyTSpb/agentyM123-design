@@ -18,11 +18,13 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="img/icons/right-arrow.png"></button>',
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1025,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     initialSlide: 2,
+                    arrows: false,
+                    dots: true
                 }
             },
             {
@@ -36,13 +38,26 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 420,
+                breakpoint: 450,
                 settings: {
+                    centerMode: true,
+                    centerPadding: '40px',
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2,
                     arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
                     centerMode: true,
+                    centerPadding: '160px',
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    arrows: false,
                     dots: true
                 }
             }
@@ -68,6 +83,8 @@ $(document).ready(function(){
             {
                 breakpoint: 800,
                 settings: {
+                    centerMode: true,
+                    centerPadding: '40px',
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     initialSlide: 1,
@@ -78,11 +95,12 @@ $(document).ready(function(){
             {
                 breakpoint: 420,
                 settings: {
+                    centerMode: true,
+                    centerPadding: '20px',
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2,
                     arrows: false,
-                    centerMode: true,
                     dots: true
                 }
             }

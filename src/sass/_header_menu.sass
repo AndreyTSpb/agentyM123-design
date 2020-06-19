@@ -95,6 +95,7 @@
             font-weight: 400
             line-height: 9px
             text-decoration: underline
+            text-shadow: none
 
         input[type='phone'], 
         input[type='password']
@@ -114,6 +115,7 @@
             font-weight: 400
             line-height: 12.68px
             text-decoration: underline
+            text-shadow: none
         button
             width: 43px
             height: 43px
@@ -133,11 +135,15 @@
     top: 0
     background-image: none
     background: $purple-color
-    min-height: 50px
+    min-height: 20px
     border-bottom: 7px solid $yellow-color
-    padding-top: 10px
-    padding-bottom: 10px
+    padding-top: 5px
+    padding-bottom: 5px
+    @extend %shadow
     .header
+        &_logo
+            width: 150px
+            height: auto
         &_social_buttons,
         &_login_menu_wrapper
             display: none
