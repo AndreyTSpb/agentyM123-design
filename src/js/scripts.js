@@ -2,10 +2,12 @@
 $(document).ready(function(){
     //меню при прокрутке
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
+        if ($(this).scrollTop() > 120) {
             $('.header').addClass('fixed-menu');
+            $('body').addClass('add-mt-200');
         } else {
             $('.header').removeClass('fixed-menu');
+            $('body').removeClass('add-mt-200');
         }
     });
     //Слайдер журналы
