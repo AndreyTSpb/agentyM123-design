@@ -186,5 +186,6 @@ $(document).ready(function(){
             }
         ]
     });
-    
+    //инициализация подсказок средствами bootstrap
+    $('[data-toggle="tooltip"]').tooltip();
   });

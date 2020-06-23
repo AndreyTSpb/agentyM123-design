@@ -40,39 +40,8 @@
                     <a href="#" class="header_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
                 </div>
             </div>
-
-            <div class="header_login_menu_wrapper fixed-menu-login-header">
-                <div class="header_login_menu">
-                    <form action="">
-                        <div class="row m-0 d-flex align-items-center">
-                            <div class="col-10">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input type="phone" name="phone" id="phone" placeholder="логин" size="10" required>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="password" name="password" id="password" placeholder="пароль" size="10" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="#">регистрация</a><br>
-                                        <a href="#">забыли пароль?</a>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center">
-                                        <input type="checkbox" name="remember" id="remember">
-                                        <label calss="header_remember" for="remember">запомнить меня</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <button type="submit">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="header_top_menu_login">
+                <a href="/login.html">Вход</a> / <a href="/registration.html">Регистрация</a>
             </div>
         </div>
     </header>
@@ -105,15 +74,65 @@
     <!--div class="seporator d-none d-lg-block"></div-->
 
     <!-- Registration -->
-    <section class="registration">
+    <section class="finish-registration">
         <div class="container">
-            <form method="POST" class="d-none d-lg-block">
-                <fieldseet>
-                    <legend>Код подтверждения из СМС</legend>
-                    <input type="phone" name="phone" id="phone" placeholder="Ваш телефон">
-                    <input type="code" name="code"  id="code" placeholder="Код подтвержденя">
-                    <button class="btn-agent btn-green">Отправить</button>
-                </fieldseet>
+            <form class="forms-base" method="post">
+                <div class="card-body">
+                    <h4 class="card-title text-info"><i class="ti-user mr-15"></i>Личные данные</h4>
+                    <hr class="my-15">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Фамилия</label>
+                                <input type="text" name="f" class="form-control" value="" required>
+                                <?php if(isset($phone) && !empty($phone)):?>
+                                    <input type="hidden" name="pass" value="">
+                                    <input type="hidden" name="phone" value="">
+                                <?php endif;?>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Имя</label>
+                                <input type="text" name="n" class="form-control" value=""  required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Отчество</label>
+                                <input type="text" name="s" class="form-control" value=""  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>E-Mail</label>
+                                <input type="text" name="email" class="form-control" value=""  required>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="card-title text-info"><i class="ti-save mr-15"></i> Дополнительная информация</h4>
+                    <hr class="my-15">
+                    <div class="form-group">
+                        <label>Род деятельности</label>
+                        <input type="text" class="form-control" name="job">
+                    </div>
+                    <div class="form-group">
+                        <label>Ваш город</label>
+                        <input type="text" class="form-control" name="city" id="city-input" list = "list-city" value="">
+                    </div>
+                    <div class="form-group">
+                        <label>Откуда Вы о нас узнали</label>
+                        <textarea rows="5" class="form-control" name="quest"></textarea>
+                    </div>
+                </div>
+                <!-- /.box-body -->
+                <div class="card-footer bg-white">
+                    <button type="submit" name="update_lk" class="btn-agent-sm btn-green">
+                        <i class="ti-save-alt"></i> Отпавить
+                    </button>
+                </div>
             </form>
         </div>
     </section>
@@ -166,8 +185,8 @@
     <!-- Slide-menu-->
     <section class="slide-menu">
         <ul>
-            <li><a href="#" data-toggle="tooltip" data-placement="right" title="На Главную"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-            <li><a href="#" data-toggle="tooltip" data-placement="right" title="На Верх"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+            <!--li><a href="#" data-toggle="tooltip" data-placement="right" title="На Главную"><i class="fa fa-home" aria-hidden="true"></i></a></li-->
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Наверх"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Сообщения"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Группы"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Данные"><i class="fa fa-id-card" aria-hidden="true"></i></a></li>

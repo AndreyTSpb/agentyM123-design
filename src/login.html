@@ -40,39 +40,8 @@
                     <a href="#" class="header_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
                 </div>
             </div>
-
-            <div class="header_login_menu_wrapper fixed-menu-login-header">
-                <div class="header_login_menu">
-                    <form action="">
-                        <div class="row m-0 d-flex align-items-center">
-                            <div class="col-10">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input type="phone" name="phone" id="phone" placeholder="логин" size="10" required>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="password" name="password" id="password" placeholder="пароль" size="10" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="#">регистрация</a><br>
-                                        <a href="#">забыли пароль?</a>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center">
-                                        <input type="checkbox" name="remember" id="remember">
-                                        <label calss="header_remember" for="remember">запомнить меня</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <button type="submit">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="header_top_menu_login">
+                <a href="/login.html">Вход</a> / <a href="/registration.html">Регистрация</a>
             </div>
         </div>
     </header>
@@ -108,18 +77,34 @@
     <section class="registration">
         <div class="container">
             <div class="row">
-                <form class="forms-base" method="post" action="<?=DOCUMENT_ROOT?>/rempass/step_1">
+                <form class="forms-base" method="post" action="<?=DOCUMENT_ROOT?>/reg/step_1">
+                    <h4>Вход</h4>
+                    <hr>
                     <div class="form-group">
                         <label>Номер телефона</label>
-                        <input class="form-control" type="text" name="loginLogi" data-toggle="tooltip" title="Введите номер телефона указанный при регистрации." required>
+                        <input class="form-control" type="text" name="loginLogi" data-toggle="tooltip" title="Введите номер телефона указаный при регистрации." required>
                     </div>
-                    <div class="alert alert-danger mb-3" role="alert" id ="error_phone" style="display: none"></div>
-                    <span class="pass_enter">
-                        <div class="form-group text-center">
-                            <button type="submit" disabled="disabled" id="submit" name="loginSub" class="btn-agent btn-green">Восстановить</button>
-                        </div>
-                    </span>
+                    <div class="form-group">
+                        <label>Пароль</label>
+                        <input class="form-control" type='password' name="loginPass" data-toggle="tooltip" title="Введите ваш пароль указаный при регистрации." required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label description-police" for="exampleCheck1">
+                            <input type="checkbox" name="yes" id="exampleCheck1" value="1" onchange="document.getElementById('submit').disabled = !this.checked;" required/>
+                            Нажимая кнопку "Войти", я принимаю условия <a href="<?=DOCUMENT_ROOT?>/doc_pdf/Polzovatelskoe_soglashenie.pdf" target="_blank" >Пользовательского соглашения <i class="far fa-file-alt"></i></a> и даю свое согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 №152-ФЗ «О персональных данных», на условиях и для целей, определенных <a href="<?=DOCUMENT_ROOT?>/doc_pdf/Politika_obrabotki_personalnykh_dannykh_1-2-3.pdf" >Политикой обработки персональных данных <i class="far fa-file-alt"></i></a>.</label>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" disabled="disabled" id="submit" name="loginSub" class="btn-agent btn-green">Войти</button>
+                    </div>
                 </form>
+            </div>
+            <div class="registration-remember-pass">
+                <div class="col text-center">
+                    <a href="math123_login.html">Зарегистрироваться</a>
+                </div>
+                <div class="col text-center">
+                    <a href="remember_pass.html">Забыли пароль?</a>
+                </div>
             </div>
         </div>
     </section>
@@ -136,7 +121,7 @@
                             <legend>Обратная связь</legend>
                             <input type="text" name="name"  id="name"  placeholder="Ваше имя">
                             <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
-                            <input type="text" name="email" id="email" placeholder="Ваш емеил">
+                            <input type="text" name="email" id="email" placeholder="Ваш E-Mail">
                             <textarea name="message" rows="3" placeholder="Ваше сообщение"></textarea>
                         </fieldseet>
                     </form>
@@ -147,7 +132,7 @@
                             <legend>Обратная связь</legend>
                             <input type="text" name="name"  id="name"  placeholder="Ваше имя">
                             <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
-                            <input type="text" name="email" id="email" placeholder="Ваш емеил">
+                            <input type="text" name="email" id="email" placeholder="Ваш E-Mail">
                             <textarea name="message" rows="3" placeholder="Ваше сообщение"></textarea>
                         </fieldseet>
                     </form>
@@ -186,16 +171,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <script>
-        //инициализация подсказок средствами bootstrap
-            $('[data-toggle="tooltip"]').tooltip();
-    </script>
-    
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
     
-    <script src="js/slider.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
