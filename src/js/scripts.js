@@ -10,6 +10,19 @@ $(document).ready(function(){
             $('body').removeClass('add-mt-200');
         }
     });
+    //Слайдер в шапке
+    $('.slider-items').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        //centerPadding: '10px',
+        autoplay: true,
+        //arrows: false,
+        autoplaySpeed: 10000,
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/left-arrow.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/icons/right-arrow.png"></button>',
+        //dots: true
+    });
     //Слайдер журналы
     $('.magazines-slider').slick({
         slidesToShow: 4,

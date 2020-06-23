@@ -1,6 +1,6 @@
 .header
     max-width: 1920px
-    min-height: 225px
+    min-height: 120px
     background-image: url('../img/bg/bg_header_menu.png')
     background-repeat: no-repeat
     background-position: center
@@ -8,11 +8,25 @@
     //background-position: left bottom
     z-index: 9999
     margin: 0 auto
+    padding-top: 5px
 
     &_top_menu
         width: 100%
         display: flex
         align-items: center
+        &_login
+            padding-top: 10px
+            width: 300px
+            text-align: center
+            margin: 0 auto
+            font-size: 18px
+            color: #fff
+            a 
+                font-size: 18px
+                color: #fff
+                text-transform: uppercase
+                text-decoration: none
+
     &_logo
         display: inline-block
         margin-left: 0px

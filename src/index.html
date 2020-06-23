@@ -40,39 +40,8 @@
                     <a href="#" class="header_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
                 </div>
             </div>
-
-            <div class="header_login_menu_wrapper fixed-menu-login-header">
-                <div class="header_login_menu">
-                    <form action="">
-                        <div class="row m-0 d-flex align-items-center">
-                            <div class="col-10">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input type="phone" name="phone" id="phone" placeholder="логин" size="10" required>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="password" name="password" id="password" placeholder="пароль" size="10" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="#">регистрация</a><br>
-                                        <a href="#">забыли пароль?</a>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center">
-                                        <input type="checkbox" name="remember" id="remember">
-                                        <label calss="header_remember" for="remember">запомнить меня</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <button type="submit">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="header_top_menu_login">
+                <a href="/login.html">Вход</a> / <a href="/registration.html">Регистрация</a>
             </div>
         </div>
     </header>
@@ -104,71 +73,19 @@
 
     <!-- Slider -->
     <section class="slider d-none d-lg-block" id="slider">
-        <!-- Slide item 1-->
-        <div class="slider-magazin slider-item">
-            <div class="container">
-                <h2>научно-математический<br>
-                    клуб для школьников</h2>
-                <div class="slider-wrapper">
-                    <div class="slider-magazin-ars d-none d-lg-block"></div>
-                    <div class="slider-magazin-buk d-none d-xl-block"></div>
-                    <div class="slider-magazin-read">
-                        <button class="btn-agent btn-green">читать журнал</button>
-                    </div>
-                    <div class="slider-magazin-devka d-none d-xl-block"></div>
-                    <div class="slider-magazin-oret d-none d-lg-block"></div>
+        <div class="container">
+            <div class="slider-items">
+                <div class="item">
+                    <a href="#"><img src="img/bg/slayder_online.png"></a>
                 </div>
-            </div>
-        </div>
-        <!-- Slide item 2-->
-        <div class="slider-online slider-item">
-            <div class="container">
-                <h2>онлайн курсы<br>
-                    «Приключения агентов М-123»</h2>
-                <div class="slider-wrapper">
-                    <div class="slider-online-airplan-1 d-none d-lg-block"></div>
-                    <div class="slider-online-run">
-                        <p>
-                            Дистанционный курс <br>
-                            по олимпиадной математикe
-                        </p>
-                        <a href="#" class="btn-agent-img"><img src="img/qub-btn.png"></a>
-                    </div>
-                    <div class="slider-online-airplan-2 d-none d-lg-block"></div>
-                    <div class="slider-online-airplan-3 d-none d-lg-block"></div>
+                <div class="item">
+                    <a href="#"><img src="img/bg/slayder_zadachi.png"></a>
                 </div>
-            </div>
-        </div>
-        <!-- Slide item 3-->
-        <div class="slider-quests slider-item">
-            <div class="container">
-                <h2>подборки задач<br>
-                    «Приключения агентов М-123»</h2>
-                <div class="slider-wrapper">
-                    <div class="slider-quests-ochkarik d-none d-lg-block"></div>
-                    <div class="slider-">
-                        <a href="#" class="slider-quests-btn-pump"><img src="img/icons/btn_pump.png" alt="" srcset=""></a>
-                    </div>
-                    <div class="slider-quests-ded_buh d-none d-lg-block"></div>
+                <div class="item">
+                    <a href="#"><img src="img/bg/slayder_journal.png"></a>
                 </div>
-            </div>
-        </div>
-        <!-- Slide item 4-->
-        <div class="slider-franshiza slider-item show">
-            <div class="container">
-                <h2>приглашаем детские центры<br>
-                    к сотрудничеству</h2>
-                <div class="slider-wrapper">
-                    <div class="slider-franshiza-devka d-none d-xl-block"></div>
-                    <div class="slider-franshiza-buh d-none d-lg-block"></div>
-                    <div class="slider-franshiza-read d-none d-lg-block">
-                        <div class="slider-franshiza-read-agenty"></div>
-                        <h4>в новом бизнес-проекте:</h4>
-                        <p><span>Научно-математический Клуб</span></p>
-                        <p>Олимпиадная и развивающая математика</p>
-                        <a href="#"><img src="img/bg/btn-franshiza.png" alt="" srcset=""></a>
-                    </div>
-                    <div class="slider-franshiza-ars d-none d-xl-block"></div>
+                <div class="item">
+                    <a href="#"><img src="img/bg/slayder_franshiza.png"></a>
                 </div>
             </div>
         </div>
@@ -687,7 +604,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     
-    <script src="js/slider.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

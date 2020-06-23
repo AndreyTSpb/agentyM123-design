@@ -40,39 +40,8 @@
                     <a href="#" class="header_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
                 </div>
             </div>
-
-            <div class="header_login_menu_wrapper fixed-menu-login-header">
-                <div class="header_login_menu">
-                    <form action="">
-                        <div class="row m-0 d-flex align-items-center">
-                            <div class="col-10">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <input type="phone" name="phone" id="phone" placeholder="логин" size="10" required>
-                                    </div>
-                                    <div class="col-6">
-                                        <input type="password" name="password" id="password" placeholder="пароль" size="10" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="#">регистрация</a><br>
-                                        <a href="#">забыли пароль?</a>
-                                    </div>
-                                    <div class="col-6 d-flex align-items-center">
-                                        <input type="checkbox" name="remember" id="remember">
-                                        <label calss="header_remember" for="remember">запомнить меня</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <button type="submit">
-                                    <i class="fa fa-sign-in" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="header_top_menu_login">
+                <a href="/login.html">Вход</a> / <a href="/registration.html">Регистрация</a>
             </div>
         </div>
     </header>
@@ -107,18 +76,36 @@
     <!-- Registration -->
     <section class="registration">
         <div class="container">
-            <form method="POST" action="finish_registration.html" class="d-none d-lg-block">
-                <fieldseet>
-                    <legend>Регистрация пользователя</legend>
-                    <input type="phone" name="phone" id="phone" placeholder="Ваш телефон">
-                    <input type="password" name="loginPass_1"  id="loginPass_1" placeholder="Новый пароль">
-                    <input type="password" name="loginPass_2"  id="loginPass_2"  placeholder="Подтвердить пароль">
-                    <p>
-                        <label><input type="checkbox" name="" id="">Нажимая кнопку "Войти", я принимаю условия Пользовательского соглашения  и даю свое согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 №152-ФЗ «О персональных данных», на условиях и для целей, определенных Политикой обработки персональных данных .</label>
-                    </p>
-                    <button class="btn-agent btn-green">Отправить</button>
-                </fieldseet>
-            </form>
+            <div class="row">
+                <form method="post" action="<?=DOCUMENT_ROOT?>/reg/step_1">
+                    <h4>Регистрация</h4>
+                    <hr>
+                    <div class="form-group">
+                        <label>Номер телефона</label>
+                        <input class="form-control" type="text" name="loginLogi" data-toggle="tooltip" title="Введите номер телефона" required>
+                    </div>
+                    <div class="alert alert-danger mb-3" role="alert" id ="error_phone" style="display: none"></div>
+                    <span class="pass_enter">
+                        <div class="form-group">
+                            <label>Новый пароль</label>
+                            <input class="form-control form-password-1" type='password' name="loginPass_1" data-toggle="tooltip" title="Введите ваш пароль" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Подтвердить пароль</label>
+                            <input class="form-control form-password-2" type='password' name="loginPass_2" data-toggle="tooltip" title="Повторите ваш пароль" required>
+                        </div>
+                    </span>
+                    <div class="alert alert-danger mb-3" role="alert" id ="error" style="display: none"></div>
+                    <div class="form-check" id="div-chek" style="display: none">
+                        <label class="form-check-label" for="exampleCheck1">
+                            <input type="checkbox" name="yes" id="exampleCheck1" value="1" onchange="document.getElementById('submit').disabled = !this.checked;" />
+                            Нажимая кнопку "Войти", я принимаю условия <a href="<?=DOCUMENT_ROOT?>/doc_pdf/Polzovatelskoe_soglashenie.pdf" target="_blank" >Пользовательского соглашения <i class="far fa-file-alt"></i></a> и даю свое согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 №152-ФЗ «О персональных данных», на условиях и для целей, определенных <a href="<?=DOCUMENT_ROOT?>/doc_pdf/Politika_obrabotki_personalnykh_dannykh_1-2-3.pdf" >Политикой обработки персональных данных <i class="far fa-file-alt"></i></a>.</label>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" disabled="disabled" id="submit" name="loginSub" class="btn-agent btn-green">Заегистрироваться</button>
+                    </div>
+                </form>
+            </div>
             <div class="registration-remember-pass">
                 <div class="col text-center">
                     <a href="math123_login.html">Есть учетная запись на Math123.ru</a>
