@@ -188,4 +188,57 @@ $(document).ready(function(){
     });
     //инициализация подсказок средствами bootstrap
     $('[data-toggle="tooltip"]').tooltip();
+
+    //Сортировка журналов по месяцам
+        //выбор журналов по годам
+    function show_and_hide_magazine(selector) {
+        let breadcrumb = selector.querySelector('.breadcrumb');
+        if(breadcrumb == null) return false;
+        let items = breadcrumb.querySelectorAll('.breadcrumb-item');
+
+        breadcrumb.addEventListener('click',(e)=>{
+            let target = e.target;
+            //console.log(target);
+            if(target.classList.contains('breadcrumb-item')){
+                remove_active();
+                target.classList.add('active');
+                let year = target.getAttribute('data-select');
+                if(year === '0'){
+                    show_all_magazines();
+                }else{
+                    hide_magazines(year);
+                }
+            }
+        });
+
+        function show_all_magazines(){
+            let magazines = selector.querySelectorAll('.magazine-item');
+            magazines.forEach(e => {
+                e.style.display = 'block';
+            });
+        }
+
+        function hide_magazines(year) {
+            let magazines = selector.querySelectorAll('.magazine-item');
+            magazines.forEach(e => {
+                //console.log(e);
+                if(e.getAttribute('data-year') === year){
+                    e.style.display = 'block';
+                }else{
+                    e.style.display = 'none';
+                }
+            });
+        }
+
+        function remove_active(){
+            items.forEach( e => {
+                e.classList.remove('active');
+            });
+        }
+    }
+
+    let block_magazines = document.querySelector('.magazine');
+    if(block_magazines != null){
+        show_and_hide_magazine(block_magazines);
+    }
   });
