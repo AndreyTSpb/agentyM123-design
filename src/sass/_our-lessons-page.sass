@@ -68,7 +68,7 @@
             display: flex
             justify-content: space-between
             .step
-                width: 30%
+                width: 32%
                 display: inline-block
                 &-header
                     width: 80%
@@ -89,16 +89,20 @@
                         text-align: center
                         color: #bcbec0
                 &-img
-                    display: block
+                    display: flex
                     margin: 0 auto
                     margin-top: 15px
-                    width: 158px
-                    height: 158px
+                    justify-content: space-between
+                    align-items: center
+                    img 
+                        display: inline-block
+                        width: 158px
+                        height: 158px
                 &-text
                     margin-top: 16px
                     text-align: center
                     line-height: 1
-                    font-size: 24px
+                    font-size: 22px
                     font-weight: normal
                     color: #414042
 
@@ -113,7 +117,12 @@
                     .green
                         background-color: $green-color
                     .grey
+                        margin-top: 0
+                        margin-right: 12px
+                        display: inline-block
                         background-color: $grey-color
+                        &:last-child
+                            margin-right: 0
     &-four-block
         margin-top: 40px
         width: 90%
@@ -127,7 +136,7 @@
             &-two,
             &-tree
                 width: 320px
-                min-height: 315px
+                min-height: 345px
                 text-align: center
 
             &-header
@@ -145,7 +154,7 @@
                     color: $dark-purple-color
 
             &-text
-                span
+                b
                     font-size: 24px
                     color: $dark-purple-color
                 p
@@ -189,6 +198,7 @@
         .btn-agent
             text-transform: uppercase
             text-align: center
+            font-size: 24px
             margin-top: 45px
             padding-top: 10px
             padding-bottom: 10px
@@ -265,35 +275,46 @@
                 color: #414042
             .wrapper-block
                 display: flex
-                justify-content: space-around
+                justify-content: space-between
                 align-items: start
                 margin-top: 38px
                 &-one,&-two,&-tree
-                    width: 320px
+                    width: 32%
                     min-height: 315px
                     text-align: center
-                    .dot
+                    .img
+                        display: flex
                         margin: 0 auto
-                        margin-top: 4px
-                        width: 15px
-                        height: 15px
-                        border-radius: 100%
-                    .green
-                        background-color: $green-color
-                    .grey
-                        background-color: $grey-color
-                    img
-                        display: block
-                        width: 158px
-                        height: 158px
-                        margin: 0 auto
-                        margin-bottom: 15px
+                        margin-top: 15px
+                        justify-content: space-between
+                        align-items: center
+                        img
+                            display: inline-block
+                            width: 158px
+                            height: 158px
+                    .step-dotes
+                        margin-top: 11px
+                        .dot
+                            margin: 0 auto
+                            margin-top: 4px
+                            width: 15px
+                            height: 15px
+                            border-radius: 100%
+                        .green
+                            background-color: $green-color
+                        .grey
+                            margin-top: 0
+                            margin-right: 16px
+                            display: inline-block
+                            background-color: $grey-color
+                            &:last-child
+                                margin-right: 0
                     p 
                         display: block
                         margin-top: 16px
                         text-align: center
                         line-height: 1
-                        font-size: 24px
+                        font-size: 22px
                         font-weight: normal
                         color: #414042
         &-price
@@ -325,6 +346,7 @@
         .btn-agent
             text-transform: uppercase
             text-align: center
+            font-size: 22px
             margin-top: 45px
             padding-top: 10px
             padding-bottom: 10px
