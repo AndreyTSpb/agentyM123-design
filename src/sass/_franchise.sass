@@ -1,0 +1,273 @@
+.franchise
+    padding-top: 50px
+    padding-bottom: 100px
+    text-align: center
+    &-first-paragraf
+        width: 90%
+        @extend %base-text-paragraf
+        color: $dark-purple-color
+        margin-top: 30px
+    &-second-paragraf
+        width: 80%
+        margin: 0 auto
+        margin-top: 35px
+        .block-alert-success
+            padding: 13px 8px 5px 8px
+            p
+                @extend %base-text-paragraf-smal
+        img
+            height: 191px
+    &-tree-paragraf
+        width: 90%
+        margin: 0 auto
+        margin-top: 35px
+        p
+            @extend %base-text-paragraf
+    &-offer
+        margin-top: 36px
+        border: 5px solid $green-color
+        background-color: $light-purple-color
+        padding: 7px 
+        width: 95%
+        border-radius: 45px
+        position: relative
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+
+        span 
+            display: block
+            position: absolute
+            font-size: 100px
+            font-family: "Galpon-Black"
+            color: $green-color
+            left: 100px
+            bottom: -3px
+        p 
+            width: 70%
+            margin: 0 auto
+            display: block
+            font-size: 25px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.27
+            letter-spacing: normal
+            text-align: center
+            color: #ffffff
+
+    &-why-you-should-choode-math
+        margin-top: 45px 
+        width: 80%
+        h4 
+            font-size: 40px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 0.88
+            letter-spacing: normal
+            text-align: center
+        &-blocks
+            div 
+                &:first-child
+                    padding-right: 20px
+                &:last-child
+                    padding-left: 20px
+            h6 
+                @extend %base-text-paragraf
+                text-align: left
+                color: $dark-purple-color
+                text-transform: uppercase
+                margin-top: 40px
+            hr 
+                border: none
+                color: red
+                background-color: $grey-color
+                height: 2px
+
+            ul 
+                margin-top: 17px
+                
+            li 
+                padding-left: 10px
+                list-style-image: url("../img/icons/grey-point.png")
+                @extend %base-text-paragraf-smal
+                text-align: left
+        &-club
+            width: 100%
+            margin: 0 auto
+            margin-top: 35px
+            p
+                @extend %base-text-paragraf
+    
+    &-why-you-should-choose-us
+        width: 90%
+        margin: 0 auto
+        margin-top: 60px
+        background-image: url("../img/bg/why.png")
+        background-repeat: no-repeat
+        background-position: right 90%
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+        padding-left: 56px
+        border-radius: 10px
+
+        
+        h4 
+            font-size: 40px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 0.88
+            letter-spacing: normal
+            text-align: center
+            margin-top: 20px
+        ul
+            list-style: none
+            counter-reset: my-awesome-counter
+
+            li.wrrap 
+                counter-increment: my-awesome-counter
+                margin-top: 35px
+                margin: 0.25rem
+                position: relative
+                text-align: left
+
+                &::before
+                    content: counter(my-awesome-counter)
+                    background: $grey-color
+                    width: 3.5rem
+                    height: 3.5rem
+                    border-radius: 50%
+                    display: inline-block
+                    line-height: 3rem
+                    color: $dark-purple-color
+                    text-align: center
+                    margin-right: 1rem
+                    font-size: 30px
+                    padding-top: 5px
+                    //position: absolute  
+
+                h6 
+                    @extend %base-text-paragraf
+                    text-align: left
+                    text-transform: uppercase
+                    display: inline-block
+                hr
+                    width: 70% 
+                    border: none
+                    color: red
+                    background-color: $grey-color
+                    height: 2px
+                    margin-left: 4rem
+                p 
+                    @extend %base-text-paragraf-smal
+                    text-align: left
+                    margin-left: 4rem
+                    &:last-child
+                        margin-top: 20px
+                ul 
+                    width: 100%
+                    display: flex
+                    justify-content: flex-start
+                    align-items: start
+                    padding-left: 30px
+                    margin-left: 4rem
+                    li
+                        list-style-image: url("../img/icons/grey-point.png")
+                        display: inline-block
+                        width: 30%
+                        @extend %base-text-paragraf-smal
+                        color: $dark-purple-color
+                        text-align: left
+                        position: relative
+                        &::before
+                            content: ""
+                            display: inline-block
+                            position: absolute
+                            left: -30px
+                            width: 25px
+                            height: 25px
+                            background-image: url(../img/icons/galka.png)
+                            background-repeat: no-repeat
+                            background-position: center     
+    &-whith-us
+        width: 95%
+        margin-top: 90px
+        p 
+            @extend %base-text-paragraf
+
+    &-contact-us
+        width: 95%
+        margin-top: 75px
+        
+        p 
+            @extend %base-text-paragraf
+            color: $light-purple-color
+        
+        &-form
+            width: 933px
+            height: 529px
+            margin: 0 auto
+            margin-top: 45px
+            padding-top: 30px
+            padding-bottom: 30px
+            border: solid 6px $green-color
+            border-radius: 15px
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+            background-color: $purole-color-elena-2
+            h4 
+                font-size: 60px
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                line-height: 0.75
+                letter-spacing: normal
+                text-align: center
+                color: #ffffff
+            &-row
+                max-width: 670px
+                margin: 0 auto 
+                input
+                    margin-top: 20px
+                    min-width: 300px
+                    height: 50px
+                    box-shadow: inset -0.1px 3px 8px 0 rgba(0, 0, 0, 0.46)
+                    border: solid 6px #127b6a
+                    border-radius: 25px
+                    padding: 20px
+                    font-size: 24px
+                    &:first-child
+                        margin-right: 10px
+                textarea
+                    margin-top: 20px
+                    padding: 20px
+                    width: 90%
+                    box-shadow: inset -0.1px 3px 8px 0 rgba(0, 0, 0, 0.46)
+                    border: solid 6px #127b6a
+                    border-radius: 25px
+                    max-width: 680px
+                    height: 165px
+                button
+                    margin-top: 20px
+        img 
+            width: 229px
+            height: 145px
+            margin-top: 25px
+
+    &-for-cooperation
+        max-width: 889px
+        margin-top: 37px
+        p
+            font-size: 40px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.13
+            letter-spacing: normal
+            text-align: center
+            color: #6d1c72
+        a
+            font-size: 48px
+            color: $dark-purple-color
+            &:last-child
+              line-height: 1
+              color: $light-purple-color
+
