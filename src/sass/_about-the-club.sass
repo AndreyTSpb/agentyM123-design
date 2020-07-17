@@ -2,24 +2,79 @@
     padding-top: 50px
     padding-bottom: 100px
     text-align: center
+
     &-first-paragraf
         width: 90%
         @extend %base-text-paragraf
         color: $dark-purple-color
         margin-top: 30px
-    &-second-paragraf
+
+    &-second-paragraf,
+    &-five-paragraf
         width: 80%
         margin: 0 auto
         margin-top: 35px
+        text-align: center
+
+        h4
+            color: $green-color
+            font-size: 45px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 0.78
+            letter-spacing: normal
+            text-align: center
+
         .block-alert-success
+            margin-top: 20px
             padding: 13px 8px 5px 8px
             p
                 @extend %base-text-paragraf-smal
         img
             height: 191px
+
     &-tree-paragraf
         width: 90%
         margin: 0 auto
         margin-top: 35px
+        
         p
             @extend %base-text-paragraf
+        
+        &-blocks
+            margin-top: 30px
+            display: flex
+            justify-content: space-between
+            align-items: start
+            .block
+                position: relative
+                width: 310px
+                border-radius: 10px
+                box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+
+                i 
+                    display: block
+                    position: absolute
+                    left: 50%
+                    transform: translateX(-50%)
+                    top: -20px
+                    width: 47px
+                    height: 47px
+                    background-color: $grey-color
+                    border-radius: 100%
+                    color: #ffffff
+                    font-size: 45px
+                    font-weight: 100
+                ul
+                    margin-top: 60px
+                    margin-left: 30px
+                    text-align: left
+                    li
+                        font-size: 15px
+                        font-weight: normal
+                        font-stretch: normal
+                        font-style: normal
+                        line-height: 1.6
+                        letter-spacing: 0.38px
+                        color: $dark-purple-color
