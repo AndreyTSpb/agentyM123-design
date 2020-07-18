@@ -17,14 +17,7 @@
         text-align: center
 
         h4
-            color: $green-color
-            font-size: 45px
-            font-weight: normal
-            font-stretch: normal
-            font-style: normal
-            line-height: 0.78
-            letter-spacing: normal
-            text-align: center
+            @extend %base-h4
 
         .block-alert-success
             margin-top: 20px
@@ -41,17 +34,24 @@
         
         p
             @extend %base-text-paragraf
+            &:last-child
+                margin-top: 45px
         
         &-blocks
-            margin-top: 30px
+            margin-top: 32px
             display: flex
             justify-content: space-between
             align-items: start
+            @media screen and ( max-width: 700px )
+                display: block
+                
             .block
                 position: relative
                 width: 310px
                 border-radius: 10px
                 box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+                padding-top: 60px
+                padding-left: 30px
 
                 i 
                     display: block
@@ -67,9 +67,9 @@
                     font-size: 45px
                     font-weight: 100
                 ul
-                    margin-top: 60px
-                    margin-left: 30px
                     text-align: left
+                    padding-bottom: 12px
+                    
                     li
                         font-size: 15px
                         font-weight: normal
@@ -78,3 +78,97 @@
                         line-height: 1.6
                         letter-spacing: 0.38px
                         color: $dark-purple-color
+                        list-style-image: url("../img/icons/green-point-small.png")
+    
+    &-four-paragraf
+        margin: 0 auto
+        margin-top: 25px
+        width: 99%
+        h4 
+            @extend %base-h4
+        &-block
+            text-align: left
+            padding-left: 55px
+            div
+                margin-top: 42px
+                width: 90%
+                position: relative
+                padding-left: 10px
+        
+                h5 
+                    font-size: 24px
+                    font-weight: normal
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 0.7
+                    letter-spacing: normal
+                    text-align: left
+                    text-transform: uppercase
+                hr 
+                    width: 70% 
+                    border: none
+                    color: red
+                    background-color: $grey-color
+                    height: 2px
+                    text-align: left
+                p 
+                    font-size: 22px
+                    font-weight: normal
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 1
+                    letter-spacing: normal
+                    text-align: left
+                img
+                    position: absolute
+                    width: 50px
+                    height: 50px
+                    top: 0
+                    left: -55px
+    
+    &-six-paragraf
+        margin-top: 55px
+        max-width: 840px
+        p
+            @extend %base-text-paragraf
+
+        button
+            width: 250px
+            font-size: 24px
+            font-weight: bold
+    
+    &-seven-paragraf
+        margin-top: 45px
+        width: 85%
+        
+        h4 
+            @extend %base-h4
+        
+        .raund-gallery
+            position: relative
+            margin-top: 45px
+            height: 300px
+        
+            .slick-list
+                height: 100%
+            .slick-slide
+                img
+                    display: none
+                    margin: 0 auto
+                    margin-top: 10px
+                    border-radius: 100%
+                    border: 2px solid #ffffff 
+                    box-shadow: 0 0 0 10px $grey-color
+                    width: 200px
+                    height: 200px
+            .slick-slide.slick-active
+                img
+                    margin-top: 42px
+                    display: block 
+            .slick-slide.slick-active.slick-center
+                img
+                    display: block
+                    width: 264px
+                    height: 264px
+                    margin-top: 12px
+                    box-shadow: 0 0 0 12px $green-color
