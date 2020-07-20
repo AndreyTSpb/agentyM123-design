@@ -71,7 +71,7 @@
                     padding-bottom: 12px
                     
                     li
-                        font-size: 15px
+                        font-size: 18px
                         font-weight: normal
                         font-stretch: normal
                         font-style: normal
@@ -153,18 +153,30 @@
                 height: 100%
             .slick-slide
                 img
-                    display: none
+                    //display: none
                     margin: 0 auto
-                    margin-top: 10px
+                    margin-top: 42px
                     border-radius: 100%
                     border: 2px solid #ffffff 
                     box-shadow: 0 0 0 10px $grey-color
                     width: 200px
                     height: 200px
-            .slick-slide.slick-active
-                img
-                    margin-top: 42px
-                    display: block 
+                    /* Переход */
+                    -webkit-transition: all 1s linear
+                    -moz-transition: all 1s linear
+                    -o-transition: all 1s linear
+                    transition: all 1s linear
+
+            //.slick-slide.slick-active
+            //    img
+            //        margin-top: 42px
+            //        display: block 
+            //        /* Переход */
+            //        -webkit-transition: all 1s linear
+            //        -moz-transition: all 1s linear
+            //        -o-transition: all 1s linear
+            //        transition: all 1s linear
+
             .slick-slide.slick-active.slick-center
                 img
                     display: block
@@ -172,3 +184,8 @@
                     height: 264px
                     margin-top: 12px
                     box-shadow: 0 0 0 12px $green-color
+                    /* Переход */
+                    -webkit-transition: all 1s linear
+                    -moz-transition: all 1s linear
+                    -o-transition: all 1s linear
+                    transition: all 1s linear

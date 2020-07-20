@@ -190,10 +190,11 @@ $(document).ready(function(){
 
     $('.raund-gallery').slick({
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '0px',
         slidesToShow: 3,
+        slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 3000,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/grey-left-arrow.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/icons/grey-right-arrow.png"></button>',
         
@@ -212,8 +213,9 @@ $(document).ready(function(){
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
+              //centerPadding: '40px',
+              slidesToShow: 1,
+              arrows: false,
             }
           }
         ]
