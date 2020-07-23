@@ -26,6 +26,7 @@
                 @extend %base-text-paragraf-smal
         img
             height: 191px
+        
 
     &-tree-paragraf
         width: 90%
@@ -48,6 +49,7 @@
             .block
                 position: relative
                 width: 330px
+                min-height: 210px
                 border-radius: 10px
                 box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
                 padding-top: 60px
@@ -71,11 +73,12 @@
                     padding-bottom: 12px
                     
                     li
-                        font-size: 20px
+                        padding-bottom: 5px
+                        font-size: 22px
                         font-weight: normal
                         font-stretch: normal
                         font-style: normal
-                        line-height: 1.6
+                        line-height: 1
                         letter-spacing: 0.38px
                         color: $dark-purple-color
                         list-style-image: url("../img/icons/green-point-small.png")
@@ -108,7 +111,7 @@
                     width: 70% 
                     border: none
                     color: red
-                    background-color: $grey-color
+                    background-color: $purple-color
                     height: 2px
                     text-align: left
                 p 
@@ -133,9 +136,10 @@
             @extend %base-text-paragraf
 
         button
-            width: 250px
+            width: 300px
             font-size: 24px
             font-weight: bold
+            text-transform: uppercase
     
     &-seven-paragraf
         margin-top: 45px
