@@ -108,7 +108,7 @@
                         цена абонемента 1200 руб.
                     </div>
                     <div class="group-sale-block-record">
-                        <button class="btn-agent btn-purple-fat">записаться</button>
+                        <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#bay-group">записаться</button>
                     </div>
                 </div>
                 <div class="group-sale-block block-alert-danger">
@@ -143,7 +143,7 @@
                         цена абонемента 1200 руб.
                     </div>
                     <div class="group-sale-block-record">
-                        <button class="btn-agent btn-purple-fat">записаться</button>
+                        <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#bay-group">записаться</button>
                     </div>
                 </div>
                 <div class="group-sale-block block-alert-danger">
@@ -178,7 +178,7 @@
                         цена абонемента 1200 руб.
                     </div>
                     <div class="group-sale-block-record">
-                        <button class="btn-agent btn-purple-fat">записаться</button>
+                        <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#bay-group">записаться</button>
                     </div>
                 </div>
                 <div class="group-sale-block block-alert-danger">
@@ -213,7 +213,7 @@
                         цена абонемента 1200 руб.
                     </div>
                     <div class="group-sale-block-record">
-                        <button class="btn-agent btn-purple-fat">записаться</button>
+                        <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#bay-group">записаться</button>
                     </div>
                 </div>
                 <div class="group-sale-block block-alert-danger">
@@ -248,7 +248,7 @@
                         цена абонемента 1200 руб.
                     </div>
                     <div class="group-sale-block-record">
-                        <button class="btn-agent btn-purple-fat">записаться</button>
+                        <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#bay-group">записаться</button>
                     </div>
                 </div>
                 <div class="group-sale-block block-alert-danger">
@@ -276,19 +276,53 @@
                             <button class="btn-agent btn-grey">Ольга Владимировна<br>ТРОШИНА</button>
                         </div>
                         <div class="group-sale-block-teacher-img">
-                            <img src="img/teachers/foto-troshina.png" alt="">
+                            <img src="img/teachers/s1200.webp" alt="">
                         </div>
                     </div>
                     <div class="group-sale-block-price">
                         цена абонемента 1200 руб.
                     </div>
                     <div class="group-sale-block-record">
-                        <button class="btn-agent btn-purple-fat">записаться</button>
+                        <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#bay-group">записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL BAY GROUP -->
+        <div class="modal fade" id="bay-group" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content block-alert-danger">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bay-group-title">Группа №1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="bay-group-body">
+                        <form>
+                            <p class="select-user">
+                                Какого ребенка хотите записать:
+                                <select name="id_stud">
+                                    <option value="1">ВасЯ Пупкин</option>
+                                    <option value="2">Петя Пупкин</option>
+                                    <option value="3">Алина Пупкин</option>
+                                </select>
+                            </p>
+                            <hr>
+                            <p class="now-month">Стоимость текушего месяца: <span>2400</span> руб.</p>
+                            <p class="price-year">Стоимость полного абонемента: <span>15000</span> руб.</p>
+                            <input type="hidden" name="id_group" value="1">
+                            <input type="hidden" name="id_user" value="2">
+                            <button class="btn-agent btn-purple-fat">записаться</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    
 
     <!-- Footer -->
     <footer class="footer">

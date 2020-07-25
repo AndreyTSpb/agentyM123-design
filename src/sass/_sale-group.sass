@@ -1,6 +1,38 @@
 .group-sale
     padding-top: 40px
     padding-bottom: 40px
+    .modal
+        &-header
+            border-bottom: 2px solid $dark-purple-color
+        &-title
+            font-size: 30px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            letter-spacing: normal
+            text-align: center
+            color: $purple-color
+        .close
+            span
+                font-size: 30px
+                color: $purple-color
+        &-body
+            p 
+                display: block
+                font-size: 22px
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                line-height: 0.76
+                letter-spacing: 0.25px
+                span
+                    font-size: 24.5px
+                    color: $purple-color
+                select 
+                    font-size: 22px
+                    padding: 5px 15px
+                    border-radius: 10px
+                    border: 2px solid $purple-color
     .row
         display: flex
         justify-content: space-around
@@ -26,7 +58,6 @@
                     display: block
                     margin: 0 auto
                     margin-top: 10px
-                    font-family: Galpon
                     font-family: "Galpon"
                     font-size: 36.5px
                     font-weight: 900
@@ -91,6 +122,10 @@
                     line-height: 0.94
                     letter-spacing: normal
                     text-align: center
+                    span
+                        font-size: 17px
+                        color: $purple-color
+                        text-transform: uppercase
             &-img
                 width: 124px
                 height: 118px
