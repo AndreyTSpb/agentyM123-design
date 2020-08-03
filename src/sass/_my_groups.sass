@@ -2,8 +2,14 @@
     &-studs
         .card-abon
             .pay_month
-                background-color: #9d9d9c
-            .pay_month.active
+                background-color: $grey-color
+                
+            .pay_month.wait
                 background-color: #ffffff
+                &:hover
+                    cursor: pointer
+
+            .pay_month.active
+                background-color: $yellow-color
                 &:hover
                     cursor: pointer
