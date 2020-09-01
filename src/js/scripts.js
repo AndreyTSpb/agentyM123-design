@@ -56,7 +56,7 @@ $(document).ready(function(){
                 breakpoint: 450,
                 settings: {
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '20px',
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2,
@@ -68,7 +68,7 @@ $(document).ready(function(){
                 breakpoint: 320,
                 settings: {
                     centerMode: true,
-                    centerPadding: '160px',
+                    centerPadding: '20px',
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
@@ -99,8 +99,20 @@ $(document).ready(function(){
                 breakpoint: 800,
                 settings: {
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '10px',
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    arrows: false,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    centerMode: true,
+                    centerPadding: '10px',
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 1,
                     arrows: false,
@@ -111,7 +123,7 @@ $(document).ready(function(){
                 breakpoint: 420,
                 settings: {
                     centerMode: true,
-                    centerPadding: '20px',
+                    centerPadding: '0px',
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2,
@@ -179,6 +191,7 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     initialSlide: 2,
+                    centerPadding: '20px',
                     arrows: false,
                     centerMode: true,
                     dots: true
@@ -276,5 +289,78 @@ $(document).ready(function(){
     let block_magazines = document.querySelector('.magazine');
     if(block_magazines != null){
         show_and_hide_magazine(block_magazines);
+    }
+
+    /**
+     * Быстрая запись 
+     */
+    let fast_record = document.querySelector(".fast-record");
+    if(fast_record != null){
+        disable_button();
+        $('#select-type').change(function () {
+            let type = $("#select-type option:selected").val();
+            
+            disable_class();
+            hide_select_raion();
+            disable_button();
+
+            if(type == 1){
+                //show select raion
+                show_select_raion();
+            }else if(type == 2){
+                hide_select_raion();
+                //enebl select class
+                enable_class();
+            }
+        });
+
+        function select_raion(){
+            let raion = document.querySelector("#select-raion");
+            raion.change(function () {
+                enable_class();
+            });
+        }
+
+
+        function show_select_raion(){
+            let raion = document.querySelector("#select-raion");
+            raion.style.display = "block";
+            if ($(raion).attr('disabled')) {
+                $(raion).removeAttr('disabled');
+            }
+            $(raion).change(function (){
+                enable_class();
+            });
+        }
+        function hide_select_raion(){
+            let raion = document.querySelector("#select-raion");
+            raion.style.display="none";
+            $(raion).attr('disabled','disabled');
+        }
+
+        function enable_class(){
+            let clas = document.querySelector('#select-class');
+            $(clas).removeAttr('disabled');
+            $(clas).change(function (){
+                enable_button();
+            });
+        }
+        function disable_class(){
+            let clas = document.querySelector('#select-class');
+            $(clas).attr('disabled','disabled');
+        }
+
+        function disable_button(){
+            let but = document.querySelector("#button-fast-record");
+            but.style.display = "none";
+            $(but).attr('disabled','disabled');
+        }
+        function enable_button(){
+            let but = document.querySelector("#button-fast-record");
+            but.style.display = "block";
+            if ($(but).attr('disabled')) {
+                $(but).removeAttr('disabled');
+            }
+        }
     }
   });

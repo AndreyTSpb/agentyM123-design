@@ -15,17 +15,34 @@
         display: flex
         align-items: center
         &_login
-            padding-top: 10px
-            width: 300px
+            display: flex
+            justify-content: center
+            //padding-top: 10px
+            max-width: 900px
             text-align: center
             margin: 0 auto
             font-size: 18px
             color: $yellow-color
-            a 
+            div
+                width: 300px
+            div:nth-child(2)
+                padding-top: 15px
+                display: table
+                height: 100%
+            div:last-child
+                text-align: right
+                line-height: 1
+                margin-bottom: 35px
+            button
+                display: table-cell
+                vertical-align: middle
+                text-transform: uppercase
+            a
                 font-size: 18px
                 color: $yellow-color
                 text-transform: uppercase
                 text-decoration: none
+
 
     &_logo
         display: inline-block
@@ -154,6 +171,7 @@
     padding-top: 3px
     padding-bottom: 3px
     @extend %shadow
+    //.header_top_menu_login div:last-child
     .header
         &_logo
             width: 150px
@@ -161,5 +179,9 @@
         &_social_buttons,
         &_login_menu_wrapper
             display: none
+        &_top_menu
+            &_login
+                div:last-child
+                    margin-bottom: 5px
 
             

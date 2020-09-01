@@ -12,8 +12,18 @@
                 font-size: 30px
             p 
                 font-size: 25px
+                @media only screen and ( max-width:  400px)
+                    text-align: justify
+            button
+                @media only screen and ( max-width:  400px)
+                    float: right !important
+            @media only screen and ( max-width:  400px)
+                text-align: center
         &-img img
                 @extend %shadow
+                @media only screen and ( max-width:  400px)
+                    display: block
+                    margin: 0 auto
 
     &-slider
         position: relative

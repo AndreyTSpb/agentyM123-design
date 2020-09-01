@@ -169,7 +169,7 @@
                                         <tr>
                                             <th scope="row"> Цена</th>
                                             <td ><div class="pay_month active" id="month_2_1" data-id="p9" data-step="1" data-id_abon="2">3000</div></td>
-                                            <td ><div class="pay_month wait" id="month_2_2" data-id="p10" data-step="2" data-id_abon="2">2400</div></td>
+                                            <td ><div class="pay_month" id="month_2_2" data-id="p10" data-step="2" data-id_abon="2">2400</div></td>
                                             <td ><div class="pay_month" id="month_2_3" data-id="p11" data-step="3" data-id_abon="2">2400</div></td>
                                             <td ><div class="pay_month" id="month_2_4" data-id="p12" data-step="4" data-id_abon="2">2400</div></td>
                                             <td ><div class="pay_month" id="month_2_5" data-id="p1"   data-step="5" data-id_abon="2">3000</div></td>
@@ -199,6 +199,12 @@
 
                                 <!--Отказ от группы-->
                                 <p class="my-3"><a class="pink-link clear_booking" data-id="17447" href="#">Отказаться от занятий в этой группе <i class="fas fa-edit"></i></a></p>
+                                <div class="wrapper-download-doc">
+                                    <form method="POST" action="/dogovor">
+                                        <input type="hidden" name="id_stud" required>
+                                        <button class="btn-like-link">Скачать договор</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
