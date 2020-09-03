@@ -29,7 +29,7 @@
             padding-right: 60px
             width: 90%
             display: flex
-            @media only screen and ( max-width:  425px)
+            @media only screen and ( max-width:  1024px)
                 padding-left: 10px
                 padding-right: 10px
 
@@ -173,6 +173,8 @@
                         background-color: $grey-color
                         &:last-child
                             margin-right: 0
+                        @media only screen and ( max-width: 1024px)
+                            display: none
                     @media only screen and ( max-width:  425px)
                         display: none
     &-four-block
@@ -184,7 +186,7 @@
             display: flex
             justify-content: space-between
             align-items: center
-            @media only screen and ( max-width:  425px)
+            @media only screen and ( max-width:  900px)
                 flex-direction: column
             &-one,
             &-two,
@@ -292,6 +294,13 @@
             padding: 40px 60px 20px 60px
             display: flex
             justify-content: space-around
+            @media only screen and ( max-width:  425px)
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 100%
+                padding: 10px 0
+                
 
             img
                 display: inline-block
@@ -308,6 +317,9 @@
                 text-align: center
                 color: $dark-purple-color
                 padding-left: 10px
+                @media only screen and ( max-width:  425px)
+                    padding-right: 10px
+                    
                 a 
                     font-size: 24px
                     font-weight: bold
@@ -318,9 +330,14 @@
             display: flex
             justify-content: space-around
             align-items: center
+                
             img 
                 width: 182px
                 height: 211px
+                @media only screen and ( max-width:  425px)
+                    display: none
+
+                    
             p 
                 font-size: 30px
                 font-weight: normal
@@ -330,6 +347,8 @@
                 letter-spacing: normal
                 text-align: left
                 margin-right: 80px
+                @media only screen and ( max-width:  425px)
+                    margin: 5px 5px
         &-how-are-classes
             margin-top: 45px
             h4 
@@ -341,15 +360,23 @@
                 letter-spacing: normal
                 text-align: center
                 color: #414042
+
             .wrapper-block
                 display: flex
                 justify-content: space-between
                 align-items: start
                 margin-top: 38px
+                @media only screen and ( max-width:  425px)
+                    flex-direction: column
+                    
                 &-one,&-two,&-tree
                     width: 32%
                     min-height: 315px
                     text-align: center
+                    @media only screen and ( max-width:  425px)
+                        width: 100%
+                        padding: 5px
+
                     .img
                         display: flex
                         margin: 0 auto
@@ -360,8 +387,13 @@
                             display: inline-block
                             width: 158px
                             height: 158px
+                            @media only screen and ( max-width:  425px)
+                                margin: 0 auto
                     .step-dotes
                         margin-top: 11px
+                        @media only screen and ( max-width:  425px)
+                            display: none
+                            
                         .dot
                             margin: 0 auto
                             margin-top: 4px
@@ -377,6 +409,8 @@
                             background-color: $grey-color
                             &:last-child
                                 margin-right: 0
+                            @media only screen and ( max-width: 1024px)
+                                display: none
                     p 
                         display: block
                         margin-top: 16px
@@ -394,6 +428,10 @@
             padding-bottom: 16px
             padding-left: 44px
             padding-right: 44px
+            @media only screen and ( max-width:  425px)
+                display: block
+                padding-left: 10px
+                padding-right: 10px
             
             img 
                 width: 54px
