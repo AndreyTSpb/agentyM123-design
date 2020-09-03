@@ -1,6 +1,8 @@
 .our_lessons
     padding-top: 50px
     padding-bottom: 100px
+    @media only screen and ( max-width:  425px)
+        margin-top: 55px
 
     &-first-paragraf
         width: 80%
@@ -27,6 +29,9 @@
             padding-right: 60px
             width: 90%
             display: flex
+            @media only screen and ( max-width:  425px)
+                padding-left: 10px
+                padding-right: 10px
 
             p
                 width: 80%
@@ -35,10 +40,18 @@
                 font-size: 24px
                 text-align: center
                 margin-left: 45px
+                @media only screen and ( max-width:  425px)
+                    width: 100%
+                    margin-left: 10px
+                    line-height: 1
+                    text-align: justify
             img
                 display: inline-block     
                 width: 147px
                 height: 136px
+                @media only screen and ( max-width:  425px)
+                    display: none
+                    
 
     &-tree-paragraf
         width: 90%
@@ -47,16 +60,28 @@
         padding-right: 60px
         display: flex
         align-items: center
+        @media only screen and ( max-width:  425px)
+            display: flex
+            flex-direction: column-reverse
+            justify-content: start
+            padding-left: 1px
+            padding-right: 1px
         p
             width: 80%
             display: inline-block
             font-size: 24px
             text-align: left
+            @media only screen and ( max-width:  425px)
+                text-align: justify
+                line-height: 1
+
         img
             display: inline-block     
             width: 206px
             height: 208px 
             margin-left: 80px
+            @media only screen and ( max-width:  425px)
+                margin: 0 auto
     &-how-are-classes
         width: 100%
         margin-top: 30px
@@ -70,15 +95,28 @@
             margin-top: 40px
             display: flex
             justify-content: space-between
+            @media only screen and ( max-width:  425px)
+                flex-direction: column
             .step
                 width: 32%
                 display: inline-block
+                @media only screen and ( max-width:  425px)
+                    display: flex
+                    flex-flow: wrap
+                    width: 100%
+                    border-bottom: 1px $grey-color solid
+                    &:last-child
+                        border-bottom: none
                 &-header
                     width: 80%
                     margin: 0 auto
                     display: flex
                     justify-content: center
                     align-items: center
+                    @media only screen and ( max-width:  425px)
+                        margin-top: 10px
+                        width: 100%
+                        order: 1
                     i   
                         font-size: 24px
                         font-weight: normal
@@ -91,18 +129,26 @@
                         font-weight: 900
                         text-align: center
                         color: #bcbec0
+                        @media only screen and ( max-width:  425px)
+                            margin-left: 5px
                 &-img
                     display: flex
                     margin: 0 auto
                     margin-top: 15px
                     justify-content: space-between
                     align-items: center
+                    @media only screen and ( max-width:  425px)
+                        //width: 100%
+                        order: 0
                     img 
                         display: inline-block
                         width: 158px
                         height: 158px
                 &-text
                     margin-top: 16px
+                    @media only screen and ( max-width:  425px)
+                        //width: 100%
+                        order: 2
                     p
                         text-align: center
                         line-height: 1
@@ -127,6 +173,8 @@
                         background-color: $grey-color
                         &:last-child
                             margin-right: 0
+                    @media only screen and ( max-width:  425px)
+                        display: none
     &-four-block
         margin-top: 40px
         width: 90%
@@ -136,6 +184,8 @@
             display: flex
             justify-content: space-between
             align-items: center
+            @media only screen and ( max-width:  425px)
+                flex-direction: column
             &-one,
             &-two,
             &-tree
@@ -188,6 +238,10 @@
             padding-bottom: 16px
             padding-left: 44px
             padding-right: 44px
+            @media only screen and ( max-width:  425px)
+                display: block
+                padding-left: 10px
+                padding-right: 10px
             
             img 
                 width: 54px
@@ -238,6 +292,7 @@
             padding: 40px 60px 20px 60px
             display: flex
             justify-content: space-around
+
             img
                 display: inline-block
                 width: 131px
