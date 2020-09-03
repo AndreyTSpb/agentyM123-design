@@ -42,6 +42,9 @@
         width: 370px
         border-radius: 20px
         margin-bottom: 15px
+        @media only screen and ( max-width:  425px)
+            width: 300px
+            
         &:hover
             border: solid 6px $green-color
         &-header
@@ -91,6 +94,9 @@
             text-align: center
             color: $green-color
             margin-top: 13px
+            @media only screen and ( max-width:  425px)
+                width: 270px
+                
 
         &-free-place
             margin-top: 8px
@@ -136,6 +142,8 @@
                     line-height: 0.94
                     letter-spacing: normal
                     text-align: center
+                    @media only screen and ( max-width:  425px)
+                        min-width: 100px
                     span
                         font-size: 17px
                         color: $purple-color
@@ -147,6 +155,11 @@
                 background-repeat: no-repeat
                 background-position: center
                 position: relative
+                @media only screen and ( max-width:  425px)
+                    width: 90px
+                    height: 87px
+                    background-size: cover
+
                 img
                     position: absolute
                     left: 50%
@@ -156,6 +169,10 @@
                     width: 105px
                     height: 105px
                     border-radius: 100%
+                    @media only screen and ( max-width:  425px)
+                        width: 80px
+                        height: 80px
+                        
         &-price
             margin-top: 20px
             font-size: 24.5px
