@@ -1,0 +1,182 @@
+.messages-user
+    padding-bottom: 50px
+    background-image: url("../img/bg/bg-message.png")
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: 0px 150px
+    @media only screen and ( max-width:  700px)
+        background-image: none
+        
+    &-chat
+        //background-color: #ffffff
+        //border-radius: 25px
+        #dropdownMenuButton
+            display: none
+            background-color: $purple-color
+            color: #ffffff
+            width: 100%
+            &:focus
+                color: #ffffff
+            @media only screen and ( max-width:  767px)
+                display: block
+                
+        &-addr
+            //background-color: #ffffff
+            border-right: 2px solid $grey-color
+            height: 100%
+            padding-top: 25px
+            padding-bottom: 25px
+            padding-left: 15px
+            padding-right: 15px
+            @media only screen and ( max-width:  767px)
+                display: none
+                
+            li 
+                list-style-type: none
+                padding-left: 35px
+                padding-top: 10px
+                padding-bottom: 10px
+                position: relative
+                @extend %shadow
+                &:before 
+                    content: ""
+                    display: inline-block
+                    position: absolute
+                    //left: calc(50% - 11px)
+                    left: 2%
+                    top: 27%
+                    width: 20px
+                    height: 20px
+                    border-radius: 100%
+                    background: $grey-color
+
+            .active
+                background-color: $purple-color
+                color: #ffffff
+                &:before 
+                    border: 2px solid $yellow-color
+                    background: $green-color
+
+        &-body
+            margin: 0 auto
+            max-height: 600px
+            //background-color: #fff
+            position: relative
+            padding-top: 25px
+            ul 
+                height: 350px
+                display: block
+                overflow-y: scroll
+                padding-left: 5px
+                padding-right: 5px
+                @media only screen and ( max-width:  470px)
+                    height: 300px
+                    
+            &-lable
+                height: 25px
+                position: absolute
+                top: 0
+                right: 0
+                background-color: $purple-color
+                color: #ffffff
+                border-bottom-left-radius: 10px
+                border-bottom-right-radius: 10px
+                padding-left: 15px
+                padding-right: 15px
+                p 
+                    color: #ffffff
+            &-day
+                position: relative
+                //display: flex
+                //align-items: center
+                text-transform: lowercase
+                color: rgba(55, 56, 87, 0.6)
+                font-size: 15px
+                font-weight: 500
+                //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+                letter-spacing: .5px
+                margin: 15px 0
+                border-top: 2px solid $grey-color
+                text-align: center
+                list-style: none
+            &-msg-item
+                list-style: none
+                padding-left: 15px
+                padding-top: 15px
+                width: 100%
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                position: relative
+                .msg-user
+                    display: flex
+                    justify-content: start
+                    align-items: flex-end
+                    div 
+                        padding-left: 5px
+                        padding-right: 5px
+                    div:last-child
+                        @media only screen and ( max-width:  570px)
+                            display: none
+                        
+
+                .text
+                    width: 60%
+                    display: inline-block
+                    border-radius: 20px
+                    border: 3px solid $yellow-color
+                    background-color: $yellow-2-color
+                    padding: 15px 20px
+                    @media only screen and ( max-width:  673px)
+                        width: 100%
+                        
+                .data
+                    margin-left: 10px
+                    font-size: 15px
+                    @media only screen and ( max-width:  470px)
+                        position: absolute
+                        top: 10px
+                        right: 10px
+                        background-color: $yellow-color
+                        width: 30%
+                        border-radius: 10px
+                        text-align: center
+                        
+            .reverse
+                width: 100%
+                display: flex
+                justify-content: flex-end
+                .msg-user
+                    div:first-child
+                        @media only screen and ( max-width:  570px)
+                            display: none
+                    div:last-child
+                        @media only screen and ( max-width:  570px)
+                            display: block
+                .text
+                    border: 3px solid #8ed8f8
+                    background-color: #c7eafb
+                .data
+                    margin-right: 10px
+                    @media only screen and ( max-width:  470px)
+                        position: absolute
+                        top: 10px
+                        left: 15px
+                        background-color: #8ed8f8
+                        width: 30%
+                        border-radius: 10px
+                        text-align: center
+        &-text-send
+            display: flex
+            justify-content: space-around
+            align-items: center
+            width: 100%
+            border-top: 2px solid $grey-color
+            .form-group
+                width: 100%
+                position: relative
+                padding-top: 10px
+                #chat-message-send
+                    position: absolute
+                    top: 17%
+                    right: 0%
