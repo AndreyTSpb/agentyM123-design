@@ -1,38 +1,35 @@
 .header
-    max-width: 1920px
+    width: 100%
+    position: fixed
+    top: 0
     min-height: 120px
-    background-image: url('../img/bg/bg_header_menu.png')
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
+    background-color: $purple-color
     //background-position: left bottom
-    z-index: 9999
+    z-index: 99
     margin: 0 auto
     padding-top: 5px
+    border-bottom: 4px solid $yellow-color
+    @extend %shadow
 
     &_top_menu
         width: 100%
         display: flex
+        justify-content: space-between
         align-items: center
+        position: relative
         &_login
             display: flex
             justify-content: center
             //padding-top: 10px
-            max-width: 900px
+            max-width: 250px
             text-align: center
             margin: 0 auto
             font-size: 18px
             color: $yellow-color
             div
-                width: 300px
-            div:nth-child(2)
+                margin: 0 auto;
                 padding-top: 15px
-                display: table
-                height: 100%
-            div:last-child
-                text-align: right
-                line-height: 1
-                margin-bottom: 35px
+                width: 200px
             button
                 display: table-cell
                 vertical-align: middle
@@ -42,7 +39,76 @@
                 color: $yellow-color
                 text-transform: uppercase
                 text-decoration: none
+        &_logo
+            max-width: 250px
+            a
+                display: block
+                margin-left: 0px
+                color: $yellow-color
 
+        &_rigth_block
+            @media only screen and (max-width: 1024px)
+                    display: none 
+            &_social_buttons
+                display: flex
+                justify-content: flex-end
+                a 
+                    display: block
+                &_instagram
+                    @extend %instagram
+                    margin-right: 17px
+                    @media only screen and (max-width: 1024px) 
+                        margin-right: 5px
+                        margin-left: 5px
+                    
+                &_vk
+                    @extend %vk
+            &_contact
+                a,i 
+                    color: $yellow-color
+                p
+                    font-size: 14px
+                    color: #ffffff
+                    span
+                        text-transform: uppercase
+                        color: #ffffff
+        &_user
+            position: absolute
+            max-width: 550px
+            min-height: 20px
+            background-color: $purple-color
+            //@extend %shadow
+            left: 0
+            right: 0
+            bottom: -79px
+            transform: translateY(-50%)
+            border-bottom-right-radius: 10px
+            border-bottom-left-radius: 10px
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 5px
+            padding-right: 5px
+            ul 
+                margin: 0 auto
+                display: flex
+                flex-direction: row
+                justify-content: space-around
+                list-style: none
+                li 
+                    display: flex
+                    flex-direction: column
+                    text-align: center
+                    i 
+                        color: #ffffff
+                    span
+                        color: #ffffff
+                        font-size: 14px
+                    &:hover
+                        span,i
+                            color: $yellow-color
+                            cursor: pointer
+                    .active
+                        color: $yellow-color
 
     &_logo
         display: inline-block
@@ -75,23 +141,6 @@
         height: 7px
         border-radius: 100%
         background-color: $yellow-color
-    
-    &_social_buttons
-        @media only screen and (max-width: 900px)
-            display: none 
-        display: flex
-        justify-content: space-between
-        a 
-            display: block
-        &_instagram
-            @extend %instagram
-            margin-right: 17px
-            @media only screen and (max-width: 1024px) 
-                margin-right: 5px
-                margin-left: 5px
-            
-        &_vk
-            @extend %vk
     
     &_login_menu_wrapper
         padding-top: 18px
@@ -160,7 +209,7 @@
             cursor: pointer
             cursor: hand
 
-.fixed-menu
+.fixed-menu111
     width: 100%
     position: fixed
     top: 0

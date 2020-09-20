@@ -15,38 +15,87 @@
     <header class="header d-none d-md-block">
         <div class="container">
             <div class="header_top_menu">
-                <img src="img/icons/logo_math123.png" alt="logo math123" class="header_logo d-none d-lg-inline">
-                <nav class="header_nav">
+                <div class="header_top_menu_logo">
+                    <a href="/"><img src="img/logo-agents.png" alt="logo math123" class="header_logo d-none d-md-inline"></a>
+                    <a href="/login.html">Добро пожаловать, <br> Давид Маркович</a>
+                </div>
+                
+                <div class="header_centr_block">
+
+                    <nav class="header_nav">
+                        <ul>
+                            <!--
+                                о клубе
+                                занятия
+                                адреса
+                                преподаватели
+                                новости
+                                журналы
+                                франшиза
+                                контакты
+                            -->
+                            <li><a href="/about_the_club.html">о клубе</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/our_lessons.html">занятия</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/#teahers">преподаватели</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/news.html">новости</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/magazines.html">журналы</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/franchise.html">франшиза</a></li>
+                            <!--li><div class="header_dote"></div></li-->
+                            <!--li><a href="">расписание</a></li-->
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_top_menu_login">
+                        <div>
+                            <button class="btn-agent-sm btn-green fast-record" data-toggle="modal" data-target="#fast-record-modal">ЗАПИСАТЬСЯ</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="header_top_menu_rigth_block">
+                    <div class="header_top_menu_rigth_block_social_buttons">
+                        <a href="#" class="header_top_menu_rigth_block_social_buttons_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="header_top_menu_rigth_block_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="header_top_menu_rigth_block_contact">
+                        <a href="tel:+79899090907">+7 (989) 909&bull;09&bull;07</a>
+                        <p>
+                            Ежежедневно с 10:00 до 21:00<br>
+                            <span>Санкт-Петербург</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="header_top_menu_user">
                     <ul>
-                        <li><a href="/about_the_club.html">о клубе</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/news.html">новости</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/our_lessons.html">занятия</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/#teahers">преподаватели</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/magazines.html">журналы</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/franchise.html">франшиза</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="">вакансии</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="">контакты</a></li>
+                        <li>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <span>мой профиль</span>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-trophy" aria-hidden="true"></i>
+                            <span>мои достижения</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <span>мои группы</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>мои сообщения</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span>выход</span>
+                        </li>
                     </ul>
-                </nav>
-                <div class="header_social_buttons">
-                    <a href="#" class="header_social_buttons_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" class="header_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="header_top_menu_login">
-                <div></div>
-                <div>
-                    <button class="btn-agent-sm btn-green fast-record" data-toggle="modal" data-target="#fast-record-modal">ЗАПИСАТЬСЯ</button>
-                </div>
-                <div>
-                    <a href="/login.html">Добро пожаловать, <br> GEgegegege GEgegege Gegeggegeg</a>
                 </div>
             </div>
         </div>
@@ -546,7 +595,7 @@
                     <p>
                         Ваш отзыв будет отправлен в организацию для рассмотрения, а также в Центр развития и поддержки предпринимательства Санкт-Петербурга для учета в работе
                     </p>
-                    <div class="col-12  text-center text-md-right mt-5 pr-5">
+                    <div class="col-12  text-center text-md-right mt-5 pr-5 d-none d-md-block">
                         <a href="http://crpp.ru" target="_blank">
                             <img src="img/crpp.png" width="300px" height="auto">
                         </a>
@@ -712,17 +761,15 @@
     <!-- Slide-menu-->
     <section class="slide-menu">
         <ul>
-            <!--li><a href="#" data-toggle="tooltip" data-placement="right" title="На Главную"><i class="fa fa-home" aria-hidden="true"></i></a></!--li-->
+            <li class="d-sm-none"><a href="#" data-toggle="tooltip" data-placement="right" title="На Главную"><i class="fa fa-home" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="На Верх"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
-            <!-- 
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Сообщения"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Группы"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Данные"><i class="fa fa-id-card" aria-hidden="true"></i></a></li>
             <li><a href="#" data-toggle="tooltip" data-placement="right" title="Выход"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
-            -->
-            <li>
+            <!--li>
                 <a href="#" class="d-block d-sm-none"><i class="fa fa-sign-in" aria-hidden="true"></i> Вход</a>
-            </li>
+            </li-->
         </ul>
     </section>
 
