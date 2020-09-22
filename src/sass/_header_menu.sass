@@ -45,6 +45,8 @@
                 display: block
                 margin-left: 0px
                 color: $yellow-color
+                line-height: 1
+                font-size: 18px
 
         &_rigth_block
             @media only screen and (max-width: 1024px)
@@ -80,7 +82,7 @@
             //@extend %shadow
             left: 0
             right: 0
-            bottom: -79px
+            bottom: -95px
             transform: translateY(-50%)
             border-bottom-right-radius: 10px
             border-bottom-left-radius: 10px
@@ -95,20 +97,21 @@
                 justify-content: space-around
                 list-style: none
                 li 
-                    display: flex
-                    flex-direction: column
-                    text-align: center
-                    i 
-                        color: #ffffff
-                    span
-                        color: #ffffff
-                        font-size: 14px
-                    &:hover
-                        span,i
+                    a
+                        display: flex
+                        flex-direction: column
+                        text-align: center
+                        i 
+                            color: #ffffff
+                        span
+                            color: #ffffff
+                            font-size: 14px
+                        &:hover
+                            span,i
+                                color: $yellow-color
+                                cursor: pointer
+                        .active
                             color: $yellow-color
-                            cursor: pointer
-                    .active
-                        color: $yellow-color
 
     &_logo
         display: inline-block
