@@ -1,15 +1,32 @@
 .my_groups
+    @extend %base-block-padding
     &-studs
-        .card-abon
-            .pay_month
-                background-color: $grey-color
-                
-            .pay_month.wait
-                background-color: #ffffff
-                &:hover
-                    cursor: pointer
-
-            .pay_month.active
-                background-color: $yellow-color
-                &:hover
-                    cursor: pointer
+        .user
+            &-name
+                font-size: 35px
+                margin-bottom: 15px
+                border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+            .card
+                box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5)
+                background-color: $yellow-2-color
+                padding: 20px 20px
+                border-radius: 10px
+                border: solid 6px $dark-purple-color
+                &-header
+                    display: flex
+                    justify-content: flex-start
+                    align-content: center
+                    align-items: center
+                    border-bottom: 1px solid $dark-purple-color
+                    background-color: $yellow-2-color
+                    h4 
+                        display: block
+                        margin-bottom: 0
+                        color: $dark-purple-color
+                &-body
+                    .table
+                        width: 100%
+                        table-layout: fixed
+                        td,th
+                            border: none
+                            width: 100%
