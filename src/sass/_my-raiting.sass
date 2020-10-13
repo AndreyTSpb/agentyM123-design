@@ -2,17 +2,80 @@
     padding: 70px 20px
     &-block-user
         min-height: 300px
+        padding: 0
+        border-radius: 20px
 
         &-header
             padding: 15px 10px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-stud-name
+                text-align: left
+                h4
+                    font-size: 1.7em
+                    font-family: "Galpon-Black"
+                    color: #0000cc
+                    text-transform: uppercase
+            &-group-name
+                text-align: center
+                h4,h6 
+                    margin-bottom: 0
+                    color: $dark-purple-color
+                h4 
+                    text-transform: uppercase
+            &-day
+                text-align: right
+                h4 
+                    color: #0000cc
+                    text-transform: uppercase
+
 
         &-body
-            border-top: 1px solid $grey-color
+            //border-top: 1px solid $grey-color
             padding: 10px 5px
             .table
-                td 
+                th 
+                    background-color: #e9dbea
+                    color: $dark-purple-color
                     text-align: center
+                    //border-top-color: $green-color
+                    //border-bottom-color: $green-color
+                td 
+                    border-color: $green-color
+                    text-align: center
+                    border-right: 1px solid $green-color
+                    &:last-child
+                        border-right: 0
                     span
                         color: $green-color
                         &:hover
                             cursor: pointer
+.modal-ball-for-lesson
+    border-radius: 20px
+    padding: 0
+    .modal-header
+        background-color: $dark-purple-color
+        .modal-title,.close>span
+            color: #FFF
+    .modal-body
+        table
+            border-spacing: 1em
+            th
+                background-color: #e9dbea
+                color: $dark-purple-color
+                text-align: center
+            td 
+                margin-top: 10px
+                text-align: center
+                border-bottom: 0px
+                padding-left: 0
+                padding-right: 0
+                div
+                    display: inline-block
+                    border-right: 1px solid $green-color
+                    width: 100%
+                    min-height: 30px
+                &:first-child
+                    div
+                        border-left: 1px solid $green-color
