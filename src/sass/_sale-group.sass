@@ -1,6 +1,5 @@
 .group-sale
-    padding-top: 40px
-    padding-bottom: 40px
+    @extend %base-block-padding
     .modal
         &-header
             border-bottom: 2px solid $dark-purple-color
@@ -38,7 +37,7 @@
         justify-content: space-around
     &-block
         min-height: 300px
-        padding: 30px 10px
+        padding: 15px 10px
         width: 370px
         border-radius: 20px
         margin-bottom: 15px
@@ -83,17 +82,20 @@
                     color: $purple-color
                     margin-bottom: 0
         &-location
+
             width: 321px
-            min-height: 21px
-            font-size: 24px
             font-weight: normal
             font-stretch: normal
             font-style: normal
             line-height: 0.83
             letter-spacing: 0.24px
             text-align: center
-            color: $green-color
             margin-top: 13px
+            a 
+                min-height: 21px
+                font-size: 24px
+                color: $green-color
+
             @media only screen and ( max-width:  425px)
                 width: 270px
                 
@@ -185,3 +187,31 @@
         &-record
             text-align: center
             margin-top: 10px
+        &-more
+            text-align: center
+            margin-top: 10px
+            button
+                color: $green-color
+                border: none
+                text-align: center
+                text-decoration: none
+                display: inline-block
+                font-size: 24px
+                //background-color: transparent
+                background-color: $yellow-2-color
+                &:hover
+                    text-decoration: underline
+                    transition: 2s
+        &-info
+            height: 90%
+            font-size: 18px
+            h4 
+                text-align: center
+            ul
+                margin-left: 30px
+                li 
+                    list-style-type: none
+                    &:before
+                        content: '\2022'
+                        color: $purple-color 
+                        padding-right: 10px   
