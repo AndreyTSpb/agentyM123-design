@@ -363,4 +363,19 @@ $(document).ready(function(){
             }
         }
     }
-  });
+    /**
+     * переключение вкладок в карточке группы при покупке
+     */
+    function toggleSlide(item) {
+        $(item).each(function(i) {
+            $(this).on('click', function(e) {
+                e.preventDefault();
+                $('.group-sale-block-group').eq(i).toggleClass('group-sale-block-group-active');
+                $('.group-sale-block-next-screen').eq(i).toggleClass('group-sale-block-next-screen-active');
+            });
+        });
+      }
+  
+      toggleSlide('.group-sale-block-button-more');
+      toggleSlide('.group-sale-block-button-back');
+});
