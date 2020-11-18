@@ -1,4 +1,4 @@
-.our-lessons-off
+.our-lessons-on
     @extend %base-block-padding
     &__first-paragraf
         width: 80%
@@ -6,71 +6,69 @@
         text-align: center
         @media only screen and ( max-width:  425px)
             text-align: justify
-
-    &__second-paragraf
-        padding-top: 25px
-
-        .block-alert-success
+    &__club
+            max-width: 1100px
             margin: 0 auto
-            margin-top: 30px
-            padding-left: 60px
-            padding-right: 60px
-            width: 100%
+            margin-top: 20px
+            padding: 40px 60px 20px 60px
             display: flex
-            @media only screen and ( max-width:  1024px)
-                padding-left: 10px
-                padding-right: 10px
+            justify-content: space-around
+            @media only screen and ( max-width:  425px)
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: 100%
+                padding: 10px 0
+                
 
-            p
-                width: 80%
-                display: inline-block
-                color: $dark-purple-color
-                font-size: 24px
-                text-align: center
-                margin-left: 45px
-                @media only screen and ( max-width:  425px)
-                    width: 100%
-                    margin-left: 10px
-                    line-height: 1
-                    text-align: justify
             img
-                display: inline-block     
-                width: 147px
-                height: 136px
-                @media only screen and ( max-width:  425px)
-                    display: none
-
-    &__tree-paragraf
-        width: 90%
-        margin-top: 50px
-        padding-left: 60px
-        padding-right: 60px
-        display: flex
-        align-items: center
-        @media only screen and ( max-width:  425px)
-            display: flex
-            flex-direction: column-reverse
-            justify-content: start
-            padding-left: 1px
-            padding-right: 1px
-        div
-            width: 80%
-            display: inline-block
-            p
+                display: inline-block
+                width: 131px
+                height: 107px
+            p 
+                display: inline-block
                 font-size: 24px
-                text-align: left
-            @media only screen and ( max-width:  425px)
-                text-align: justify
-                line-height: 1
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                line-height: 1.25
+                letter-spacing: normal
+                text-align: center
+                color: $dark-purple-color
+                padding-left: 10px
+                @media only screen and ( max-width:  425px)
+                    padding-right: 10px
+                    
+                a 
+                    font-size: 24px
+                    font-weight: bold
 
-        img
-            display: inline-block     
-            width: 206px
-            height: 208px 
-            margin-left: 80px
+    &__access
+        max-width: 900px
+        margin: 0 auto
+        margin-top: 60px
+        display: flex
+        justify-content: space-around
+        align-items: center
+            
+        img 
+            width: 182px
+            height: 211px
             @media only screen and ( max-width:  425px)
-                margin: 0 auto
+                display: none
 
+                
+        .text 
+            font-size: 30px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1
+            letter-spacing: normal
+            text-align: left
+            margin-right: 80px
+            @media only screen and ( max-width:  425px)
+                margin: 5px 5px
     &__how-are-classes
         width: 100%
         margin-top: 30px
@@ -134,8 +132,8 @@
                         width: 158px
                         height: 158px
                 &-text
-                    text-align: center
                     margin-top: 16px
+                    text-align: center
                     @media only screen and ( max-width:  425px)
                         //width: 100%
                         order: 2
@@ -166,7 +164,7 @@
                         @media only screen and ( max-width: 1024px)
                             display: none
                     @media only screen and ( max-width:  425px)
-                        display: none     
+                        display: none
 
     &__four-block
         margin-top: 40px
@@ -183,7 +181,7 @@
             &-two,
             &-tree
                 width: 320px
-                min-height: 375px
+                min-height: 345px
                 text-align: center
             &-grey-point
                 margin: 0 auto
@@ -274,4 +272,12 @@
             border-radius: 30px
             width: 268px
             height: 61px
-            color: #fff
+            color: #fff        
+
+    &__schedule
+        margin: 0 auto
+        margin-top: 40px
+        h4
+            color: $dark-purple-color
+            font-size: 21px
+            text-transform: uppercase       
