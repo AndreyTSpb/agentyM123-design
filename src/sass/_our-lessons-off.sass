@@ -167,3 +167,107 @@
                             display: none
                     @media only screen and ( max-width:  425px)
                         display: none     
+
+    &__four-block
+        margin-top: 40px
+        width: 90%
+        text-align: center
+        &-blocks
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            @media only screen and ( max-width:  900px)
+                flex-direction: column
+            &-one,
+            &-two,
+            &-tree
+                width: 320px
+                min-height: 375px
+                text-align: center
+            &-grey-point
+                margin: 0 auto
+                margin-top: 4px
+                width: 15px
+                height: 15px
+                border-radius: 100%
+                background-color: $grey-color
+
+            &-header
+                width: 100%
+                display: flex
+                justify-content: center
+                img
+                    display: inline-block
+                    width: auto
+                    height: 70px
+                    margin-right: 25px
+                p 
+                    display: inline-block
+                    font-size: 24px
+                    color: $dark-purple-color
+
+            &-text
+                b,strong
+                    font-size: 24px
+                    color: $dark-purple-color
+                p
+                    font-size: 24px
+                    font-weight: normal
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: 1
+                    letter-spacing: normal
+                button
+                    font-size: 24px
+                    padding: 14px
+                    border-radius: 23px
+        &-price
+            margin: 0 auto
+            margin-top: 35px
+            display: flex
+            max-width: 604px
+            padding-top: 16px
+            padding-bottom: 16px
+            padding-left: 44px
+            padding-right: 44px
+            @media only screen and ( max-width:  425px)
+                display: block
+                padding-left: 10px
+                padding-right: 10px
+            
+            img 
+                width: 54px
+                height: 82px
+            p 
+                padding-left: 10px
+                font-size: 24px
+                font-weight: normal
+                font-stretch: normal
+                font-style: normal
+                line-height: 1
+                letter-spacing: 0.6px
+                text-align: center
+                color: $dark-purple-color
+            b,strong
+                font-size: 30px
+                font-weight: bold
+                color: $dark-purple-color
+            .sub-text
+                img
+                    width: 163px
+                    height: 123px
+                    margin: 0 0 0 28px
+                    padding: 25px 12px 32px 50px
+
+        .btn-agent
+            text-transform: uppercase
+            text-align: center
+            font-size: 20px
+            margin-top: 45px
+            padding-top: 10px
+            padding-bottom: 10px
+            border-radius: 30px
+            width: 268px
+            height: 61px
+            color: #fff
