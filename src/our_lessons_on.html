@@ -36,7 +36,18 @@
                             -->
                             <li><a href="/about_the_club.html">о клубе</a></li>
                             <li><div class="header_dote"></div></li>
-                            <li><a href="/our_lessons.html">занятия</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn btn-no-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        занятия
+                                    </a>
+                                
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="/our_lessons_off.html">Очные</a>
+                                        <a class="dropdown-item" href="/our_lessons_on.html">Онлайн</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li><div class="header_dote"></div></li>
                             <li><a href="/#teahers">преподаватели</a></li>
                             <li><div class="header_dote"></div></li>
@@ -372,34 +383,184 @@
                         <h4>Расписание</h4>
                         <ul class="nav nav-tabs" id="scheduleTab" role="tablist">
                             <li class="nav-item">
-                              <a class="btn-agent btn-green active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                <a class="btn-agent-sm btn-grey active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                  <span>1 класс</span> 3 группы
+                                </a>
                             </li>
                             <li class="nav-item">
-                              <a class="btn-agent btn-green" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                <a class="btn-agent-sm btn-grey" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                    <span>2 класс</span> 2 группы
+                                </a>
                             </li>
                             <li class="nav-item">
-                              <a class="btn-agent btn-green" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                <a class="btn-agent-sm btn-grey" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span>3 класс</span> 3 группы
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn-agent btn-green" id="home-tab1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                              </li>
+                                <a class="btn-agent-sm btn-grey" id="home-tab1" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                                    <span>4 класс</span> 1 группы
+                                </a>
+                            </li>
                               <li class="nav-item">
-                                <a class="btn-agent btn-green" id="profile-tab1" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="btn-agent btn-green" id="contact-tab1" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                              </li>
+                                <a class="btn-agent-sm btn-grey" id="profile-tab1" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                                    <span>5 класс</span> 3 группы
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn-agent-sm btn-grey" id="contact-tab1" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+                                    <span>6 класс</span> 5 группы
+                                </a>
+                            </li>
                         </ul>
 
                         <div class="tab-content" id="scheduleTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus porro molestias ducimus iusto voluptate aliquam quasi amet saepe consequatur, vitae expedita officia voluptatum blanditiis in, ipsam quaerat ratione alias.
+                                <div class="table-responsive">
+                                    <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Понедельник</th>
+                                                <th scope="col">Вторник</th>
+                                                <th scope="col">Среда</th>
+                                                <th scope="col">Четверг</th>
+                                                <th scope="col">Пятница</th>
+                                                <th scope="col">Суббота</th>
+                                                <th scope="col">Воскресенье</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident aperiam porro enim numquam saepe eaque repellendus consectetur necessitatibus corporis rem assumenda laborum mollitia, pariatur, eos, alias natus magnam. Ab.
+                                <div class="table-responsive">
+                                    <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Понедельник</th>
+                                                <th scope="col">Вторник</th>
+                                                <th scope="col">Среда</th>
+                                                <th scope="col">Четверг</th>
+                                                <th scope="col">Пятница</th>
+                                                <th scope="col">Суббота</th>
+                                                <th scope="col">Воскресенье</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla labore totam repellat reiciendis cum nobis nihil, sapiente, fugiat corporis corrupti accusamus dolorum, voluptatibus eum. Modi, iure fuga? Ipsa, iusto ullam.
+                                <div class="table-responsive">
+                                    <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Понедельник</th>
+                                                <th scope="col">Вторник</th>
+                                                <th scope="col">Среда</th>
+                                                <th scope="col">Четверг</th>
+                                                <th scope="col">Пятница</th>
+                                                <th scope="col">Суббота</th>
+                                                <th scope="col">Воскресенье</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                                <td>
+                                                    15:00-17:00<br>
+                                                    17:00-19:00<br>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -415,7 +576,7 @@
                             <img src="img/record-free-less.png" alt="" srcset="">
                         </div>
                     </div>
-                    <button class="btn-agent btn-purple-fat">записаться<br>на занятия</button>
+                    <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#online-record-modal">записаться<br>на занятия</button>
                 </div>
 
             </div>
@@ -482,6 +643,87 @@
             </div>
         </div>
     </div>
+    </div>
+
+    <!-- Modal Fast Records-->
+    <div class="modal fade" id="fast-record-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Выбор группы</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z"/>
+                </svg>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form id="form-fast-record">
+                    <div class="form-group mb-2">
+                        <select class="form-control" required id="select-type">
+                            <option>Выбрать тип группы</option>
+                            <option value="1">Офлайн занятия</option>
+                            <option value="2">Онлайн занятий</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-2">
+                        <select class="form-control" disabled id="select-raion" style="display: none;">
+                            <option>Предпочитительный район</option>
+                            <option>Адмиралтейский</option>
+                            <option>Кировский</option>
+                            <option>Красносельский</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-2">
+                        <select class="form-control" disabled id="select-class">
+                            <option>Выбрать Класс</option>
+                            <option>1 Класс</option>
+                            <option>2 Класс</option>
+                            <option>3 Класс</option>
+                            <option>4 Класс</option>
+                            <option>5 Класс</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn-agent btn-green" form="#form-fast-record" id="button-fast-record">ЗАПИСАТЬСЯ</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Modal Online Records-->
+    <div class="modal fade" id="online-record-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Выбор группы</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z"/>
+                </svg>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form id="form-fast-record">
+                    <div class="form-group mb-2">
+                        <select class="form-control">
+                            <option>Выбрать Класс</option>
+                            <option>1 Класс</option>
+                            <option>2 Класс</option>
+                            <option>3 Класс</option>
+                            <option>4 Класс</option>
+                            <option>5 Класс</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn-agent btn-green" form="#online-fast-record">ЗАПИСАТЬСЯ</button>
+            </div>
+        </div>
+        </div>
     </div>
 
     <!-- Footer -->

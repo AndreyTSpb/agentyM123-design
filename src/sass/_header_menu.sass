@@ -137,7 +137,27 @@
                     color: #fff
                     text-transform: uppercase
                     text-decoration: none
-                    @extend %text-shadow  
+                    @extend %text-shadow
+                .btn-no-border
+                    border: none
+                    background-color: none
+                    &:hover
+                        color: #fff
+                .dropdown-menu
+                    background-color: #d7d7d7
+                    min-width: 100px
+                    padding-top: 0
+                    padding-bottom: 0
+                    a 
+                        color: $purple-color
+                        &:hover
+                            background-color: $yellow-color
+                            &:first-child
+                                border-top-right-radius: 5px
+                                border-top-left-radius: 5px
+                            &:last-child
+                                border-bottom-left-radius: 5px
+                                border-bottom-right-radius: 5px
 
     &_dote
         width: 7px
