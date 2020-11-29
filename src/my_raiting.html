@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="other/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <!-- Header -->
@@ -36,7 +36,18 @@
                             -->
                             <li><a href="/about_the_club.html">о клубе</a></li>
                             <li><div class="header_dote"></div></li>
-                            <li><a href="/our_lessons.html">занятия</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn btn-no-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        занятия
+                                    </a>
+                                
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="/our_lessons_off.html">Очные</a>
+                                        <a class="dropdown-item" href="/our_lessons_on.html">Онлайн</a>
+                                    </div>
+                                </div>
+                            </li>
                             <li><div class="header_dote"></div></li>
                             <li><a href="/#teahers">преподаватели</a></li>
                             <li><div class="header_dote"></div></li>

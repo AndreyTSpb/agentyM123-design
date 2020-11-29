@@ -8,40 +8,116 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="other/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header d-none d-md-block">
         <div class="container">
             <div class="header_top_menu">
-                <img src="img/icons/logo_math123.png" alt="logo math123" class="header_logo d-none d-lg-inline">
-                <nav class="header_nav">
-                    <ul>
-                        <li><a href="/about_the_club.html">о клубе</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/news.html">новости</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/our_lessons.html">занятия</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/#teahers">преподаватели</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/magazines.html">журналы</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="/franchise.html">франшиза</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="">вакансии</a></li>
-                        <li><div class="header_dote"></div></li>
-                        <li><a href="">контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header_social_buttons">
-                    <a href="#" class="header_social_buttons_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#" class="header_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                <div class="header_top_menu_logo">
+                    <a href="/"><img src="img/logo-agents.png" alt="logo math123" class="header_logo d-none d-md-inline"></a>
+                    <a href="/login.html">Добро пожаловать, <br> Давид Маркович</a>
                 </div>
-            </div>
-            <div class="header_top_menu_login">
-                <a href="/login.html">Вход</a> / <a href="/registration.html">Регистрация</a>
+                
+                <div class="header_centr_block">
+
+                    <nav class="header_nav">
+                        <ul>
+                            <!--
+                                о клубе
+                                занятия
+                                адреса
+                                преподаватели
+                                новости
+                                журналы
+                                франшиза
+                                контакты
+                            -->
+                            <li><a href="/about_the_club.html">о клубе</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="btn btn-no-border dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        занятия
+                                    </a>
+                                
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="/our_lessons_off.html">Очные</a>
+                                        <a class="dropdown-item" href="/our_lessons_on.html">Онлайн</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/#teahers">преподаватели</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/news.html">новости</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/magazines.html">журналы</a></li>
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="/franchise.html">франшиза</a></li>
+                            <!--li><div class="header_dote"></div></li-->
+                            <!--li><a href="">расписание</a></li-->
+                            <li><div class="header_dote"></div></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_top_menu_login">
+                        <div>
+                            <button class="btn-agent-sm btn-green fast-record" data-toggle="modal" data-target="#fast-record-modal">ЗАПИСАТЬСЯ</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="header_top_menu_rigth_block">
+                    <div class="header_top_menu_rigth_block_social_buttons">
+                        <a href="#" class="header_top_menu_rigth_block_social_buttons_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="header_top_menu_rigth_block_social_buttons_vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="header_top_menu_rigth_block_contact">
+                        <a href="tel:+79899090907"><i class="fa fa-phone" aria-hidden="true"></i> +7 (989) 909&bull;09&bull;07</a>
+                        <p>
+                            Ежежедневно с 10:00 до 21:00<br>
+                            <span>Санкт-Петербург</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="header_top_menu_user">
+                    <ul>
+                        <li>
+                            <a>
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>мой профиль</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a>
+                                <i class="fa fa-trophy" aria-hidden="true"></i>
+                                <span>мои достижения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                <span>мои группы</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>мои сообщения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                <span>выход</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -60,6 +136,9 @@
                     <li><a href="/franchise.html">франшиза</a></li>
                     <li><a href="">вакансии</a></li>
                     <li><a href="">контакты</a></li>
+                    <li>
+                        <button class="btn-agent-sm btn-green fast-record" data-toggle="modal" data-target="#fast-record-modal">ЗАПИСАТЬСЯ</button>
+                    </li>
                 </ul>
               </div>
             </div>
@@ -67,8 +146,24 @@
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+              <a class="navbar-brand" href="/">Агенты М-123</a>
             </nav>
           </div>
+    </section>
+
+    <!-- Slide-menu-->
+    <section class="slide-menu">
+        <ul>
+            <li class="d-sm-none"><a href="#" data-toggle="tooltip" data-placement="right" title="На Главную"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="На Верх"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Сообщения"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Группы"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Мои Данные"><i class="fa fa-id-card" aria-hidden="true"></i></a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Выход"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            <!--li>
+                <a href="#" class="d-block d-sm-none"><i class="fa fa-sign-in" aria-hidden="true"></i> Вход</a>
+            </li-->
+        </ul>
     </section>
 
     <!-- NEWS -->
