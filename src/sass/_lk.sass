@@ -1,0 +1,110 @@
+.lk
+    @extend %base-block-padding
+    .card
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+        background-color: #fffbdb
+        &-header
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            border-bottom: 1px solid $dark-purple-color
+            background-color: $yellow-2-color
+            padding: 10px 0px
+            .group-sale-block-header-img
+                i
+                    display: block
+                    margin-top: 10px
+                    margin-left: 17px
+                    font-size: 30px
+                    font-weight: 900
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: .56
+                    letter-spacing: .37px
+                    text-align: center
+                    color: #9bc03e
+            h4 
+                display: block
+                margin-bottom: 0
+                color: $dark-purple-color
+
+    &_students-title
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        i
+                    display: block
+                    margin-top: 10px
+                    margin-left: 17px
+                    font-size: 30px
+                    font-weight: 900
+                    font-stretch: normal
+                    font-style: normal
+                    line-height: .56
+                    letter-spacing: .37px
+                    text-align: center
+                    color: #9bc03e
+                    
+    &_block-studs
+        overflow: hidden
+        width: 50%
+        padding: 35px 15px
+        transition: all 0.5s ease 0s
+
+    &_student-add-wrapper
+        display: flex
+        width: calc(200% + 40px);
+        min-height: 420px
+
+    &_edit-student-form
+        min-height: 420px
+
+    &_add-student-plus
+        position: relative
+        width: 50%
+        margin-right: 0px
+        transform: translateX(-100%)
+        transition: all 0.5s ease 0s
+
+        &-btn 
+            width: 10em
+            display: block
+            position: absolute
+            left: 50%
+            top: 35%
+            transform: translateX(-50%)
+            i 
+                font-size: 10em
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                &:hover
+                    cursor: pointer
+                    color: #9bc03e
+                    text-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+        &-active
+            transform: translateX(0px)
+            margin-right: 25px
+    
+
+    &_add-student-form
+        position: relative
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0px)
+        padding-right: 20px
+        padding-left: 0px
+        margin-bottom: 0px
+        list-style-type: none
+        transition: all 0.5s ease 0s
+        &-btns
+            padding-top: 25px
+            display: flex
+            justify-content: space-between
+            @media only screen and ( max-width:  425px)
+                flex-direction: column
+                justify-content: space-between
+
+        &-active
+            transform: translateX(-100%)
+            margin-left: 0px

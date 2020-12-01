@@ -352,8 +352,10 @@ $(document).ready(function(){
 
         function disable_button(){
             let but = document.querySelector("#button-fast-record");
-            but.style.display = "none";
-            $(but).attr('disabled','disabled');
+            if(but !== null){
+                but.style.display = "none";
+                $(but).attr('disabled','disabled');
+            }
         }
         function enable_button(){
             let but = document.querySelector("#button-fast-record");
@@ -374,8 +376,20 @@ $(document).ready(function(){
                 $('.group-sale-block-next-screen').eq(i).toggleClass('group-sale-block-next-screen-active');
             });
         });
-      }
+    }
   
-      toggleSlide('.group-sale-block-button-more');
-      toggleSlide('.group-sale-block-button-back');
+    toggleSlide('.group-sale-block-button-more');
+    toggleSlide('.group-sale-block-button-back');
+
+    /**
+     * Переключение на добавить ученика
+     */
+    function activateAddStud(item){
+        $(item).on('click', function(e) {
+            $('.lk_add-student-plus').toggleClass('lk_add-student-plus-active');
+            $('.lk_add-student-form').toggleClass('lk_add-student-form-active');
+        });
+    }
+    activateAddStud('.lk_add-student-plus-btn');
+    activateAddStud('.btn-add-stud-close');
 });
