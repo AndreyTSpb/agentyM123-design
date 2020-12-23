@@ -575,7 +575,7 @@
                             зависит от количества занятий в месяце
                         </div>
                         <div class="sub-text">
-                            <img src="img/record-free-less.png" alt="" srcset="">
+                            <a href="#" data-toggle="modal" data-target="#modal-record"><img src="img/record-free-less.png" alt="" srcset=""></a>
                         </div>
                     </div>
                     <button class="btn-agent btn-purple-fat" data-toggle="modal" data-target="#online-record-modal">записаться<br>на занятия</button>
@@ -605,6 +605,7 @@
           </div>
         </div>
     </div>
+
     <!-- модалка для оценок за урок -->
     <div class="modal fade" id="modal-day-1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -729,6 +730,101 @@
         </div>
     </div>
 
+    <!-- Модалка для записи на занятие -->
+    <div class="modal fade" id="modal-record" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content  block-alert-danger">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modal-yearLabel">Запись на разовое бесплатное занятие по олимпиадной математике</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>ФИО ребенка</label>
+                            <input class="form-control" type="text" name="fio_student" value="" required="required">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Город</label>
+                            <input type="text" name="city" value="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Класс</label>
+                            <select class="form-control" name="klass" id="klass">
+                                <option value="99">Дошкольник</option>
+                                <option value="1">1 Класс</option>
+                                <option value="2">2 Класс</option>
+                                <option value="3">3 Класс</option>
+                                <option value="4">4 Класс</option>
+                                <option value="5">5 Класс</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-12">
+                            <label>На какую площадку Вы хотели бы записаться на разовое занятие?</label>
+                            <select class="form-control" name="place">
+                                <option value="1">онлайн занятия (понедельник, среда, четверг, пятница, суббота, воскресенье)</option>
+                                <option value="2">ул. Васенко, 12 (понедельник) - вход с ул. Замшиной</option>
+                                <option value="3">пр. Королева, 57 корп.1 (пятница) - м. Комендантский пр.</option>
+                                <option value="4">пр. Просвещения, 99 (суббота) - м. Гражданский пр.</option>
+                                <option value="5">Гжатская ул, 22 корп.1 (суббота) - м. Академическая</option>
+                                <option value="6">Туристская, 4 корп.1 (суббота) - м. Беговая</option>
+                                <option value="7">ул. Латышских стрелков, 1 (суббота) - м. пр. Большевиков</option>
+                                <option value="7">ул. Радищева, 35 (суббота) - м. Чернышевская</option>
+                                <option value="7">Ленинский пр., д. 84 корп.1(воскресенье)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Ваши комментарии/пожелания</label>
+                            <textarea class="form-control" name="comment" id="comment" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group col-12">
+                            <label>ФИО родителя или законного представителя</label>
+                            <input class="form-control" type="text" name="name_parent" required="required">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Телефон для связи</label>
+                            <input class="form-control" type="phone" name="phone" value="" required="required">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>E-mail</label>
+                            <input class="form-control" type="email" name="email" value="" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn-agent-sm btn-grey" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn-agent-sm btn-purple-fat" data-dismiss="modal">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- модалка "сообщение отправленно" -->
+    <div class="modal fade" id="modal-send-message-to-admin" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content block-alert-danger modal-ball-for-lesson">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-yearLabel">Спасибо!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Ваше сообщение отправленно!</p>
+                    <p>Администратор в ближайшее время с Вами свяжется!!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -739,7 +835,7 @@
                     <p class="d-flex align-items-center"><i class="fa fa-clock-o mr-2" aria-hidden="true"></i> Часы работы с 10:00-20:00</p>
                     <p class="d-flex align-items-center"><i class="fa fa-globe mr-2" aria-hidden="true"></i> <a href="mailto:agents.math123@gmail.com">agents.math123@gmail.com</a></p>
                     <p class="d-flex align-items-center"><i class="fa fa-building-o mr-2" aria-hidden="true"></i> г. Санкт-Петербург, ул. Ефимова, д. 3, оф. 512а</p>
-                    <form id="footer-contact-us" method="POST" class="d-none d-lg-block" novalidate="novalidate">
+                    <form id="footer-contact-us" class="d-none d-lg-block" novalidate="novalidate">
                         <fieldseet>
                             <legend>Обратная связь</legend>
                             <input type="text" name="name" id="name" required="" placeholder="Ваше имя">
@@ -747,19 +843,19 @@
                             <input type="email" name="email" id="email" required="" placeholder="Ваш E-Mail">
                             <input type="hidden" name="theme_massage" required="" id="theme_massage" value="Обратная связь с сайта">
                             <textarea name="message" rows="3" required="" placeholder="Ваше сообщение"></textarea>
-                            <button class="btn-agent-sm mb-2">Отправить</button>
+                            <button data-toggle="modal" data-target="#modal-send-message-to-admin"  class="btn-agent-sm mb-2">Отправить</button>
                         </fieldseet>
                     </form>
                 </div>
                 <div class="col-md-4 d-lg-none">
-                    <form method="POST" class="d-lg-none">
+                    <form class="d-lg-none">
                         <fieldseet>
                             <legend>Обратная связь</legend>
                             <input type="text" name="name"  id="name"  placeholder="Ваше имя">
                             <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
                             <input type="text" name="email" id="email" placeholder="Ваш E-Mail">
                             <textarea name="message" rows="3" placeholder="Ваше сообщение"></textarea>
-                            <button class="btn-agent-sm mb-2">Send</button>
+                            <button data-toggle="modal" data-target="#modal-send-message-to-admin" class="btn-agent-sm mb-2">Send</button>
                         </fieldseet>
                         
                     </form>

@@ -391,7 +391,7 @@
                             зависит от количества занятий в месяце
                         </div>
                         <div class="sub-text">
-                            <img src="img/record-free-less.png" alt="" srcset="">
+                            <a href="#" data-toggle="modal" data-target="#modal-record"><img src="img/record-free-less.png" alt="" srcset=""></a>
                         </div>
                     </div>
                     <button class="btn-agent btn-purple-fat">записаться<br>на занятия</button>
@@ -1198,49 +1198,143 @@
           </div>
         </div>
     </div>
+    
     <!-- модалка для оценок за урок -->
     <div class="modal fade" id="modal-day-1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content block-alert-danger modal-ball-for-lesson">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modal-day-1Label">Оценки за занятие 12.09</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <table class="table table-hover table-centered  table-responsive-lg">
-                    <thead class="bg-light-blue">
-                        <tr>
-                            <th scope="col">№1</th>
-                            <th scope="col">№2</th>
-                            <th scope="col">№3</th>
-                            <th scope="col">№4</th>
-                            <th scope="col">№5</th>
-                            <th scope="col">№6</th>
-                            <th scope="col">№7</th>
-                            <th scope="col">Итог</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><div>3</div></td>
-                            <td><div>3</div></td>
-                            <td><div>4</div></td>
-                            <td><div> </div></td>
-                            <td><div> </div></td>
-                            <td><div> </div></td>
-                            <td><div> </div></td>
-                            <td><div>10</div></td>
-                        </tr>
-                    </tbody>
-                    </table>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content block-alert-danger modal-ball-for-lesson">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-day-1Label">Оценки за занятие 12.09</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-hover table-centered  table-responsive-lg">
+                        <thead class="bg-light-blue">
+                            <tr>
+                                <th scope="col">№1</th>
+                                <th scope="col">№2</th>
+                                <th scope="col">№3</th>
+                                <th scope="col">№4</th>
+                                <th scope="col">№5</th>
+                                <th scope="col">№6</th>
+                                <th scope="col">№7</th>
+                                <th scope="col">Итог</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div>3</div></td>
+                                <td><div>3</div></td>
+                                <td><div>4</div></td>
+                                <td><div> </div></td>
+                                <td><div> </div></td>
+                                <td><div> </div></td>
+                                <td><div> </div></td>
+                                <td><div>10</div></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    <!-- Модалка для записи на занятие -->
 
+    <!-- Модалка для записи на занятие -->
+    <div class="modal fade" id="modal-record" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content  block-alert-danger">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modal-yearLabel">Запись на разовое бесплатное занятие по олимпиадной математике</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>ФИО ребенка</label>
+                            <input class="form-control" type="text" name="fio_student" value="" required="required">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Город</label>
+                            <input type="text" name="city" value="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Класс</label>
+                            <select class="form-control" name="klass" id="klass">
+                                <option value="99">Дошкольник</option>
+                                <option value="1">1 Класс</option>
+                                <option value="2">2 Класс</option>
+                                <option value="3">3 Класс</option>
+                                <option value="4">4 Класс</option>
+                                <option value="5">5 Класс</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-12">
+                            <label>На какую площадку Вы хотели бы записаться на разовое занятие?</label>
+                            <select class="form-control" name="place">
+                                <option value="1">онлайн занятия (понедельник, среда, четверг, пятница, суббота, воскресенье)</option>
+                                <option value="2">ул. Васенко, 12 (понедельник) - вход с ул. Замшиной</option>
+                                <option value="3">пр. Королева, 57 корп.1 (пятница) - м. Комендантский пр.</option>
+                                <option value="4">пр. Просвещения, 99 (суббота) - м. Гражданский пр.</option>
+                                <option value="5">Гжатская ул, 22 корп.1 (суббота) - м. Академическая</option>
+                                <option value="6">Туристская, 4 корп.1 (суббота) - м. Беговая</option>
+                                <option value="7">ул. Латышских стрелков, 1 (суббота) - м. пр. Большевиков</option>
+                                <option value="7">ул. Радищева, 35 (суббота) - м. Чернышевская</option>
+                                <option value="7">Ленинский пр., д. 84 корп.1(воскресенье)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label>Ваши комментарии/пожелания</label>
+                            <textarea class="form-control" name="comment" id="comment" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form-group col-12">
+                            <label>ФИО родителя или законного представителя</label>
+                            <input class="form-control" type="text" name="name_parent" required="required">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Телефон для связи</label>
+                            <input class="form-control" type="phone" name="phone" value="" required="required">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>E-mail</label>
+                            <input class="form-control" type="email" name="email" value="" required="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn-agent-sm btn-grey" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn-agent-sm btn-purple-fat" data-dismiss="modal">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- модалка "сообщение отправленно" -->
+    <div class="modal fade" id="modal-send-message-to-admin" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content block-alert-danger modal-ball-for-lesson">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-yearLabel">Спасибо!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Ваше сообщение отправленно!</p>
+                    <p>Администратор в ближайшее время с Вами свяжется!!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
